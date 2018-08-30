@@ -2,10 +2,10 @@ const yaml = require('yamljs');
 const fs = require('fs');
 
 
-const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/`;
-const rPiLocation = `/home/pi/trackerjacker/`;
+const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
+const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
-const PATH = rPiLocation
+const PATH = laptopLocation
 
 const yamlToJson = mapName => {
   try {
@@ -44,18 +44,14 @@ const parseNetworkData = mapName => {
   return parsedData
 }
 
+  
+  var parseResult = fs.readdirSync(PATH).map(file => {
+    return parseNetworkData(String(file));
+  })
 
-const result = [
-  parseNetworkData('wifi_map_30Aug_9am_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_10am_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_11am_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_12pm_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_2pm_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_3pm_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_4pm_JigsawBuilding.yaml'),
-]
+  
+console.log(parseResult)
 
-console.log(result)
 
 module.exports = {
   yamlToJson,
