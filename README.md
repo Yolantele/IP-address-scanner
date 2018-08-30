@@ -12,21 +12,23 @@ Ifconfig -a (looks up local wlan address and other device interface info)
 trackerjacker -i wlan1 --map
 
 
-Other Useful flags:
 
-- - -access-points APS_TO_WATCH (Specified by BSSID separated by commas)
+Other Useful:
 
-- - -map-save-interval MAP_SAVE_INTERVAL (Number of seconds between saving WiFi map to disc )
+- trackerjacker documentation:
+https://github.com/calebmadrigal/trackerjacker
 
-- - -plugin TRIGGER_PLUGIN (python trigger plugin file path) 
+- commandline:
 
-- - -plugin-config PLUGIN_CONF_JSON (config to pass to python trigger plugin)
+```--access-points APS_TO_WATCH```(Specified by BSSID separated by commas)
 
-- - -map-file MAP_FILE  (File path to witch to output WiFi map (default is WiFi_map.yaml file) 
+```--plugin-config PLUGIN_CONF_JSON``` (config to pass to python trigger plugin)
 
-- - -print-default-config
+```--map-file MAP_FILE```  (File path to witch to output WiFi map (default is WiFi_map.yaml file) 
 
--  - -config CONFIG (path to config json file to run trackerjacke on non-default settings)
+```--print-default-config```
+
+```--config CONFIG``` (path to config json file to run trackerjacke on non-default settings)
 
 
 

@@ -1,6 +1,7 @@
 const yaml = require('yamljs');
 const fs = require('fs');
 
+
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/`;
 const rPiLocation = `/home/pi/trackerjacker/`;
 
@@ -58,5 +59,5 @@ console.log(result)
 
 module.exports = {
   yamlToJson,
-  parseNetworkData
+  parseNetworkData,
 }

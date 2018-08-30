@@ -1,0 +1,23 @@
+{
+  "name": "network-scanner",
+  "version": "1.0.0",
+  "description": "to run TRACKER JACKER on rPI: 1. run tracker jacker with root priveleges:  sudo su (run raspberryPi with root privileges )",
+  "main": "ParseTrackerJackerWifiMap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jigsawxyz/network-scanner.git"
+  },
+  "author": "jolanta jasiulionyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jigsawxyz/network-scanner/issues"
+  },
+  "homepage": "https://github.com/jigsawxyz/network-scanner#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "yamljs": "^0.3.0"
+  }
+}
