@@ -5,7 +5,7 @@ const fs = require('fs');
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
 const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
-const PATH = laptopLocation
+const PATH = rPiLocation
 
 const yamlToJson = mapName => {
   try {
@@ -44,8 +44,7 @@ const parseNetworkData = mapName => {
   return parsedData
 }
 
-  
-  var parseResult = fs.readdirSync(PATH).map(file => {
+  const parseResult = fs.readdirSync(PATH).map(file => {
     return parseNetworkData(String(file));
   })
 
