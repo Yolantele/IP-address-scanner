@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jigsawxyz/network-scanner#readme",
   "dependencies": {
     "fs": "0.0.1-security",
+    "node-cron": "^1.2.1",
     "yamljs": "^0.3.0"
   }
 }
