@@ -2,12 +2,13 @@ const yaml = require('yamljs');
 const fs = require('fs');
 
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/`;
-const rPiLocation = `home/pi/trackerjacker/`;
+const rPiLocation = `/home/pi/trackerjacker/`;
 
+const PATH = laptopLocation
 
 const yamlToJson = mapName => {
   try {
-    return yaml.parse(fs.readFileSync( laptopLocation + mapName, 'utf8'));
+    return yaml.parse(fs.readFileSync( PATH + mapName, 'utf8'));
   } catch (e) {
     console.log(e)
   }
@@ -36,17 +37,21 @@ const parseNetworkData = mapName => {
     
   })
   parsedData.totalNetworksDevices = devicesAccrossNetworks
-  parsedData.timeStamp = fs.statSync(laptopLocation + mapName).birthtime
+  parsedData.timeStamp = fs.statSync(PATH + mapName).birthtime
+  parsedData.fileName = mapName
 
   return parsedData
-    
 }
 
 
 const result = [
   parseNetworkData('wifi_map_30Aug_9am_JigsawBuilding.yaml'),
-  // parseNetworkData('wifi_map_30Aug_10am_JigsawBuilding.yaml'),
-  // parseNetworkData('wifi_map_30Aug_11am_JigsawBuilding.yaml'),
+  parseNetworkData('wifi_map_30Aug_10am_JigsawBuilding.yaml'),
+  parseNetworkData('wifi_map_30Aug_11am_JigsawBuilding.yaml'),
+  parseNetworkData('wifi_map_30Aug_12pm_JigsawBuilding.yaml'),
+  parseNetworkData('wifi_map_30Aug_2pm_JigsawBuilding.yaml'),
+  parseNetworkData('wifi_map_30Aug_3pm_JigsawBuilding.yaml'),
+  parseNetworkData('wifi_map_30Aug_4pm_JigsawBuilding.yaml'),
 ]
 
 console.log(result)
