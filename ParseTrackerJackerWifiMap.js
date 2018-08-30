@@ -1,51 +1,52 @@
 const yaml = require('yamljs');
 const fs = require('fs');
 
-// const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/${mapName}`;
-// const rPiLocation = `home/pi/trackerjacker/${mapName}`;
+const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/`;
+const rPiLocation = `home/pi/trackerjacker/`;
 
 
 const yamlToJson = mapName => {
   try {
-    return yaml.parse(fs.readFileSync(`/Users/jolanta/Projects/2018/network-scanner/${mapName}`, 'utf8'));
+    return yaml.parse(fs.readFileSync( laptopLocation + mapName, 'utf8'));
   } catch (e) {
     console.log(e)
   }
 }
 
 
-
-
 const parseNetworkData = mapName => {
-
-    let devicesAccrossNetworks = 0
-    let snapshot = {}
-    
-    var jsonMap = yamlToJson(mapName)
-
-    Object.entries(jsonMap).forEach(([network, networkValue]) => {
-        let devices = 0
-        Object.entries(networkValue).forEach(([ssid, values]) => {
-            if (typeof values['devices'] === 'object') {
-                devices += Object.keys(values['devices']).length
-            }
-        })
-        if (devices === 0) {
-            null
-        } else {
-            devicesAccrossNetworks += devices
-            snapshot[network] = devices
-        }
-        
+  
+  let devicesAccrossNetworks = 0
+  let parsedData = {}
+  var jsonMap = yamlToJson(mapName)
+  
+  Object.entries(jsonMap).forEach(([network, networkValue]) => {
+    let devices = 0
+    Object.entries(networkValue).forEach(([ssid, values]) => {
+      if (typeof values['devices'] === 'object') {
+        devices += Object.keys(values['devices']).length
+      }
     })
-    snapshot.totalNetworksDevices = devicesAccrossNetworks
-    return snapshot
+    if (devices === 0) {
+      null
+    } else {
+      devicesAccrossNetworks += devices
+      parsedData[network] = devices
+    }
+    
+  })
+  parsedData.totalNetworksDevices = devicesAccrossNetworks
+  parsedData.timeStamp = fs.statSync(laptopLocation + mapName).birthtime
+
+  return parsedData
+    
 }
 
 
 const result = [
   parseNetworkData('wifi_map_30Aug_9am_JigsawBuilding.yaml'),
-  parseNetworkData('wifi_map_30Aug_10am_JigsawBuilding.yaml')
+  // parseNetworkData('wifi_map_30Aug_10am_JigsawBuilding.yaml'),
+  // parseNetworkData('wifi_map_30Aug_11am_JigsawBuilding.yaml'),
 ]
 
 console.log(result)
