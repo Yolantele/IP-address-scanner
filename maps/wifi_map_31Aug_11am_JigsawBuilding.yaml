@@ -1,0 +1,2775 @@
+AHMM:
+  24:de:c6:cf:16:95:
+    bssid: 24:de:c6:cf:16:95
+    bytes: 5378
+    channels:
+    - 1
+    - 2
+    devices:
+      01:00:5e:00:00:01:
+        bytes: 1736
+        signal: -51
+        vendor: ''
+      01:00:5e:72:06:07:
+        bytes: 926
+        signal: -85
+        vendor: ''
+      01:80:c2:00:00:00:
+        bytes: 112
+        signal: -81
+        vendor: ''
+      0c:51:01:71:08:78:
+        bytes: 366
+        signal: -79
+        vendor: Apple, Inc.
+      14:18:77:d9:18:ce:
+        bytes: 112
+        signal: -83
+        vendor: Dell Inc.
+      '33:33:00:01:00:02':
+        bytes: 757
+        signal: -81
+        vendor: ''
+      68:ca:e4:1d:2d:2d:
+        bytes: 112
+        signal: -81
+        vendor: ''
+      98:90:96:a1:cd:a1:
+        bytes: 218
+        signal: -73
+        vendor: Dell Inc.
+      98:90:96:ad:5a:0a:
+        bytes: 576
+        signal: -83
+        vendor: Dell Inc.
+      d8:9e:f3:42:53:68:
+        bytes: 926
+        signal: -85
+        vendor: ''
+      d8:9e:f3:42:56:40:
+        bytes: 112
+        signal: -83
+        vendor: ''
+      d8:9e:f3:42:9c:78:
+        bytes: 219
+        signal: -83
+        vendor: ''
+    signal: -83
+    ssid: AHMM
+    vendor: Aruba Networks
+
+AHMM 3rd Floor Connect:
+  00:12:5f:0b:6f:74:
+    bssid: 00:12:5f:0b:6f:74
+    bytes: 912
+    channels:
+    - 1
+    devices: {}
+    signal: -83
+    ssid: AHMM 3rd Floor Connect
+    vendor: AWIND Inc.
+
+AHMM_Staff:
+  24:de:c6:cf:16:92:
+    bssid: 24:de:c6:cf:16:92
+    bytes: 4136
+    channels:
+    - 1
+    - 4
+    - 5
+    devices:
+      02:12:5f:0b:6f:74:
+        bytes: 2847
+        signal: -83
+        vendor: ''
+      24:de:c6:c4:f1:69:
+        bytes: 3500
+        signal: -256
+        vendor: Aruba Networks
+      54:72:4f:6e:79:3b:
+        bytes: 1586
+        signal: -83
+        vendor: Apple, Inc.
+      d8:d1:cb:da:c0:0e:
+        bytes: 4743
+        signal: -83
+        vendor: Apple, Inc.
+      e0:5f:45:b0:7f:90:
+        bytes: 1112
+        signal: -83
+        vendor: Apple, Inc.
+    signal: -83
+    ssid: AHMM_Staff
+    vendor: Aruba Networks
+
+AHMM_guest:
+  24:de:c6:cf:16:94:
+    bssid: 24:de:c6:cf:16:94
+    bytes: 4325
+    channels:
+    - 1
+    devices: {}
+    signal: -83
+    ssid: AHMM_guest
+    vendor: Aruba Networks
+
+Augmentum Guest:
+  7a:8a:20:4c:ad:1e:
+    bssid: 7a:8a:20:4c:ad:1e
+    bytes: 4924
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: Augmentum Guest
+    vendor: ''
+  7a:8a:20:4c:ad:25:
+    bssid: 7a:8a:20:4c:ad:25
+    bytes: 4174
+    channels:
+    - 6
+    devices: {}
+    signal: -81
+    ssid: Augmentum Guest
+    vendor: ''
+
+Augmentum WiFi:
+  78:8a:20:4c:ad:1e:
+    bssid: 78:8a:20:4c:ad:1e
+    bytes: 4922
+    channels:
+    - 1
+    devices: {}
+    signal: -75
+    ssid: Augmentum WiFi
+    vendor: Ubiquiti Networks Inc.
+  78:8a:20:4c:ad:25:
+    bssid: 78:8a:20:4c:ad:25
+    bytes: 11760
+    channels:
+    - 9
+    - 6
+    - 7
+    devices:
+      01:00:5e:00:00:16:
+        bytes: 530
+        signal: -83
+        vendor: ''
+      01:00:5e:00:00:fb:
+        bytes: 19094
+        signal: -51
+        vendor: ''
+      01:00:5e:7f:ff:fa:
+        bytes: 4150
+        signal: -77
+        vendor: ''
+      '33:33:00:00:00:16':
+        bytes: 2890
+        signal: -79
+        vendor: ''
+      33:33:00:00:00:fb:
+        bytes: 19934
+        signal: -51
+        vendor: ''
+      '33:33:00:01:00:02':
+        bytes: 757
+        signal: -81
+        vendor: ''
+      64:4b:f0:10:08:a2:
+        bytes: 411
+        signal: -83
+        vendor: CalDigit, Inc
+      78:8a:20:4b:ad:25:
+        bytes: 94
+        signal: -77
+        vendor: Ubiquiti Networks Inc.
+      94:bf:2d:51:24:85:
+        bytes: 1928
+        signal: -81
+        vendor: ''
+      9c:da:3e:83:7c:19:
+        bytes: 526
+        signal: -81
+        vendor: Intel Corporate
+      c8:d3:ff:dc:f5:90:
+        bytes: 862
+        signal: -83
+        vendor: Hewlett Packard
+      cc:8e:71:b3:8e:c0:
+        bytes: 320
+        signal: -81
+        vendor: ''
+      dc:56:e7:3d:32:64:
+        bytes: 734
+        signal: -83
+        vendor: ''
+      dc:a4:ca:81:ce:62:
+        bytes: 1181
+        signal: -85
+        vendor: Apple, Inc.
+    signal: -81
+    ssid: Augmentum WiFi
+    vendor: Ubiquiti Networks Inc.
+
+Breakout:
+  00:12:5f:11:53:f0:
+    bssid: 00:12:5f:11:53:f0
+    bytes: 720
+    channels:
+    - 11
+    devices: {}
+    signal: -87
+    ssid: Breakout
+    vendor: AWIND Inc.
+
+Colliers-AV:
+  12:18:0a:6f:7e:5c:
+    bssid: 12:18:0a:6f:7e:5c
+    bytes: 10512
+    channels:
+    - 11
+    devices: {}
+    signal: -81
+    ssid: Colliers-AV
+    vendor: ''
+
+Delboy:
+  80:2a:a8:c7:fa:5f:
+    bssid: 80:2a:a8:c7:fa:5f
+    bytes: 763
+    channels:
+    - 11
+    - 12
+    - 13
+    devices:
+      34:69:87:0c:5e:2a:
+        bytes: 126
+        signal: -87
+        vendor: zte corporation
+    signal: -87
+    ssid: null
+    vendor: Ubiquiti Networks Inc.
+
+EE-y64jps:
+  48:8d:36:e7:a8:6e:
+    bssid: 48:8d:36:e7:a8:6e
+    bytes: 249
+    channels:
+    - 6
+    devices: {}
+    signal: -85
+    ssid: EE-y64jps
+    vendor: Arcadyan Corporation
+
+Jigsaw 2G:
+  1a:8d:db:66:5f:72:
+    bssid: 1a:8d:db:66:5f:72
+    bytes: 24106
+    channels:
+    - 8
+    - 9
+    - 10
+    - 6
+    - 7
+    devices:
+      00:0e:58:51:3c:54:
+        bytes: 5792
+        signal: -53
+        vendor: Sonos, Inc.
+      01:00:5e:00:00:01:
+        bytes: 1736
+        signal: -51
+        vendor: ''
+      01:00:5e:00:00:32:
+        bytes: 1421
+        signal: -256
+        vendor: ''
+      01:00:5e:00:00:fb:
+        bytes: 19094
+        signal: -51
+        vendor: ''
+      0c:51:01:8e:cf:20:
+        bytes: 2979
+        signal: -71
+        vendor: Apple, Inc.
+      0c:8d:db:66:5f:72:
+        bytes: 1285
+        signal: -256
+        vendor: Cisco Meraki
+      28:f0:76:47:8a:f4:
+        bytes: 3681
+        signal: -256
+        vendor: Apple, Inc.
+      28:f0:76:70:7a:fa:
+        bytes: 12040
+        signal: -69
+        vendor: Apple, Inc.
+      '33:33:00:00:00:02':
+        bytes: 2874
+        signal: -79
+        vendor: ''
+      '33:33:00:00:00:16':
+        bytes: 2890
+        signal: -79
+        vendor: ''
+      33:33:00:00:00:fb:
+        bytes: 19934
+        signal: -51
+        vendor: ''
+      34:7c:25:d0:b4:e7:
+        bytes: 3680
+        signal: -63
+        vendor: ''
+      68:fb:7e:f3:84:4f:
+        bytes: 614
+        signal: -65
+        vendor: Apple, Inc.
+      6c:4d:73:af:c7:14:
+        bytes: 2381
+        signal: -65
+        vendor: ''
+      78:11:dc:de:dc:14:
+        bytes: 1692
+        signal: -63
+        vendor: ''
+      78:4f:43:64:3c:b3:
+        bytes: 8833
+        signal: -69
+        vendor: Apple, Inc.
+      78:4f:43:70:55:cf:
+        bytes: 4937
+        signal: -51
+        vendor: Apple, Inc.
+      78:4f:43:9c:3e:6d:
+        bytes: 4443
+        signal: -65
+        vendor: Apple, Inc.
+      78:67:d7:52:5f:fc:
+        bytes: 2306
+        signal: -83
+        vendor: ''
+      94:e9:6a:98:c3:32:
+        bytes: 4316
+        signal: -69
+        vendor: Apple, Inc.
+      a8:60:b6:0f:38:95:
+        bytes: 1433
+        signal: -69
+        vendor: Apple, Inc.
+      a8:66:7f:03:e1:d0:
+        bytes: 6165
+        signal: -67
+        vendor: Apple, Inc.
+      c4:b3:01:c8:c3:49:
+        bytes: 1174
+        signal: -51
+        vendor: Apple, Inc.
+      c8:3c:85:2e:cb:66:
+        bytes: 8065
+        signal: -53
+        vendor: ''
+      d0:2b:20:e0:37:d5:
+        bytes: 10569
+        signal: -51
+        vendor: ''
+      d0:c5:f3:7b:30:e9:
+        bytes: 664
+        signal: -67
+        vendor: Apple, Inc.
+      dc:56:e7:69:3e:08:
+        bytes: 1646
+        signal: -65
+        vendor: ''
+      dc:a9:04:89:a5:c8:
+        bytes: 5291
+        signal: -256
+        vendor: Apple, Inc.
+      e0:55:3d:84:d4:ee:
+        bytes: 26531
+        signal: -53
+        vendor: Cisco Meraki
+      e4:2b:34:1c:83:c3:
+        bytes: 522
+        signal: -51
+        vendor: ''
+      ec:66:d1:86:97:34:
+        bytes: 1526
+        signal: -49
+        vendor: B&W Group LTD
+    signal: -73
+    ssid: Jigsaw 2G
+    vendor: ''
+  1a:8d:db:66:9d:0d:
+    bssid: 1a:8d:db:66:9d:0d
+    bytes: 1438
+    channels:
+    - 1
+    devices: {}
+    signal: -75
+    ssid: Jigsaw 2G
+    vendor: ''
+  1a:8d:db:94:13:c9:
+    bssid: 1a:8d:db:94:13:c9
+    bytes: 6805
+    channels:
+    - 1
+    devices: {}
+    signal: -79
+    ssid: Jigsaw 2G
+    vendor: ''
+  1a:8d:db:94:14:49:
+    bssid: 1a:8d:db:94:14:49
+    bytes: 12588
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: Jigsaw 2G
+    vendor: ''
+  1a:8d:db:94:8f:33:
+    bssid: 1a:8d:db:94:8f:33
+    bytes: 32773
+    channels:
+    - 1
+    - 2
+    - 10
+    - 11
+    - 12
+    - 13
+    devices:
+      00:0e:58:51:3c:54:
+        bytes: 5792
+        signal: -53
+        vendor: Sonos, Inc.
+      01:00:5e:00:00:01:
+        bytes: 1736
+        signal: -51
+        vendor: ''
+      01:00:5e:00:00:fb:
+        bytes: 19094
+        signal: -51
+        vendor: ''
+      0c:51:01:8e:cf:20:
+        bytes: 2979
+        signal: -71
+        vendor: Apple, Inc.
+      0c:8d:db:94:8f:33:
+        bytes: 4467
+        signal: -256
+        vendor: Cisco Meraki
+      28:a0:2b:96:ee:f5:
+        bytes: 956
+        signal: -87
+        vendor: Apple, Inc.
+      28:f0:76:47:8a:f4:
+        bytes: 3681
+        signal: -256
+        vendor: Apple, Inc.
+      28:f0:76:48:5e:be:
+        bytes: 5902
+        signal: -51
+        vendor: Apple, Inc.
+      28:f0:76:6c:23:26:
+        bytes: 817
+        signal: -256
+        vendor: Apple, Inc.
+      28:f0:76:70:7a:fa:
+        bytes: 12040
+        signal: -69
+        vendor: Apple, Inc.
+      '33:33:00:00:00:02':
+        bytes: 2874
+        signal: -79
+        vendor: ''
+      '33:33:00:00:00:16':
+        bytes: 2890
+        signal: -79
+        vendor: ''
+      33:33:00:00:00:fb:
+        bytes: 19934
+        signal: -51
+        vendor: ''
+      34:7c:25:d0:b4:e7:
+        bytes: 3680
+        signal: -63
+        vendor: ''
+      5c:aa:fd:6c:7f:3c:
+        bytes: 28519
+        signal: -53
+        vendor: Sonos, Inc.
+      5c:f9:38:c7:fc:31:
+        bytes: 586
+        signal: -51
+        vendor: Apple, Inc.
+      68:fb:7e:f3:84:4f:
+        bytes: 614
+        signal: -65
+        vendor: Apple, Inc.
+      6c:4d:73:af:c7:14:
+        bytes: 2381
+        signal: -65
+        vendor: ''
+      78:4f:43:5d:e4:be:
+        bytes: 2309
+        signal: -51
+        vendor: Apple, Inc.
+      78:4f:43:64:3c:b3:
+        bytes: 8833
+        signal: -69
+        vendor: Apple, Inc.
+      78:4f:43:70:55:cf:
+        bytes: 4937
+        signal: -51
+        vendor: Apple, Inc.
+      78:4f:43:79:ab:6f:
+        bytes: 11796
+        signal: -79
+        vendor: Apple, Inc.
+      78:4f:43:7b:42:62:
+        bytes: 9720
+        signal: -256
+        vendor: Apple, Inc.
+      78:4f:43:98:f5:18:
+        bytes: 1066
+        signal: -71
+        vendor: Apple, Inc.
+      78:4f:43:9c:3e:6d:
+        bytes: 4443
+        signal: -65
+        vendor: Apple, Inc.
+      7c:1c:4e:03:2e:2b:
+        bytes: 1920
+        signal: -53
+        vendor: ''
+      94:e9:6a:98:c3:32:
+        bytes: 4316
+        signal: -69
+        vendor: Apple, Inc.
+      a4:b8:05:a4:1e:de:
+        bytes: 3196
+        signal: -49
+        vendor: Apple, Inc.
+      a8:60:b6:0f:38:95:
+        bytes: 1433
+        signal: -69
+        vendor: Apple, Inc.
+      a8:60:b6:0f:b6:c0:
+        bytes: 1297
+        signal: -256
+        vendor: Apple, Inc.
+      a8:66:7f:03:e1:d0:
+        bytes: 6165
+        signal: -67
+        vendor: Apple, Inc.
+      a8:a7:95:b6:2c:de:
+        bytes: 4924
+        signal: -256
+        vendor: Hon Hai Precision Ind. Co.,Ltd.
+      c4:b3:01:c8:c3:49:
+        bytes: 1174
+        signal: -51
+        vendor: Apple, Inc.
+      c8:3c:85:2e:cb:66:
+        bytes: 8065
+        signal: -53
+        vendor: ''
+      c8:ff:77:d7:89:3c:
+        bytes: 411
+        signal: -49
+        vendor: Dyson Limited
+      d0:2b:20:e0:37:d5:
+        bytes: 10569
+        signal: -51
+        vendor: ''
+      dc:56:e7:69:3e:08:
+        bytes: 1646
+        signal: -65
+        vendor: ''
+      dc:a9:04:89:a5:c8:
+        bytes: 5291
+        signal: -256
+        vendor: Apple, Inc.
+      e0:55:3d:84:d4:ee:
+        bytes: 26531
+        signal: -53
+        vendor: Cisco Meraki
+      e4:2b:34:1c:83:c3:
+        bytes: 522
+        signal: -51
+        vendor: ''
+      ec:66:d1:86:97:34:
+        bytes: 1526
+        signal: -49
+        vendor: B&W Group LTD
+      f0:98:9d:74:b1:89:
+        bytes: 650
+        signal: -69
+        vendor: ''
+      f4:0f:24:0e:f9:59:
+        bytes: 888
+        signal: -256
+        vendor: Apple, Inc.
+    signal: -51
+    ssid: Jigsaw 2G
+    vendor: ''
+
+JigsawGuest:
+  1e:8d:db:66:5f:72:
+    bssid: 1e:8d:db:66:5f:72
+    bytes: 2178
+    channels:
+    - 6
+    devices: {}
+    signal: -67
+    ssid: JigsawGuest
+    vendor: ''
+  1e:8d:db:66:9d:0d:
+    bssid: 1e:8d:db:66:9d:0d
+    bytes: 2178
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: JigsawGuest
+    vendor: ''
+  1e:8d:db:94:13:c9:
+    bssid: 1e:8d:db:94:13:c9
+    bytes: 7170
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: JigsawGuest
+    vendor: ''
+  1e:8d:db:94:14:49:
+    bssid: 1e:8d:db:94:14:49
+    bytes: 12302
+    channels:
+    - 1
+    devices: {}
+    signal: -77
+    ssid: JigsawGuest
+    vendor: ''
+  1e:8d:db:94:8f:33:
+    bssid: 1e:8d:db:94:8f:33
+    bytes: 15192
+    channels:
+    - 11
+    devices: {}
+    signal: -51
+    ssid: JigsawGuest
+    vendor: ''
+
+LBI Public:
+  d4:68:4d:64:62:a8:
+    bssid: d4:68:4d:64:62:a8
+    bytes: 3435
+    channels:
+    - 2
+    - 12
+    - 13
+    devices:
+      4c:66:41:62:ad:6e:
+        bytes: 4439
+        signal: -83
+        vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+      4c:9e:ff:71:f9:30:
+        bytes: 1348
+        signal: -79
+        vendor: ZyXEL Communications Corporation
+    signal: -89
+    ssid: LBI Public
+    vendor: Ruckus Wireless
+
+LBI Select:
+  d4:68:4d:24:62:a8:
+    bssid: d4:68:4d:24:62:a8
+    bytes: 5537
+    channels:
+    - 13
+    devices:
+      60:f6:77:e5:81:fc:
+        bytes: 98
+        signal: -85
+        vendor: ''
+      6c:27:79:c0:0e:bc:
+        bytes: 98
+        signal: -85
+        vendor: Microsoft Mobile Oy
+    signal: -89
+    ssid: LBI Select
+    vendor: Ruckus Wireless
+
+Rodney:
+  82:2a:a8:c7:fa:5f:
+    bssid: 82:2a:a8:c7:fa:5f
+    bytes: 651
+    channels:
+    - 11
+    devices: {}
+    signal: -91
+    ssid: Rodney
+    vendor: ''
+
+Screen:
+  d4:68:4d:a4:62:a8:
+    bssid: d4:68:4d:a4:62:a8
+    bytes: 4209
+    channels:
+    - 13
+    devices: {}
+    signal: -89
+    ssid: Screen
+    vendor: Ruckus Wireless
+
+TWArchitecture- WePresent:
+  28:24:ff:f3:4b:87:
+    bssid: 28:24:ff:f3:4b:87
+    bytes: 6338
+    channels:
+    - 4
+    devices: {}
+    signal: -81
+    ssid: TWArchitecture- WePresent
+    vendor: Wistron Neweb Corporation
+
+TWGGuest:
+  0a:8d:db:66:5f:72:
+    bssid: 0a:8d:db:66:5f:72
+    bytes: 4308
+    channels:
+    - 6
+    devices: {}
+    signal: -73
+    ssid: TWGGuest
+    vendor: ''
+  0a:8d:db:66:9d:0d:
+    bssid: 0a:8d:db:66:9d:0d
+    bytes: 2160
+    channels:
+    - 1
+    devices: {}
+    signal: -83
+    ssid: TWGGuest
+    vendor: ''
+  0a:8d:db:94:13:c9:
+    bssid: 0a:8d:db:94:13:c9
+    bytes: 5706
+    channels:
+    - 3
+    devices: {}
+    signal: -81
+    ssid: TWGGuest
+    vendor: ''
+  0a:8d:db:94:14:49:
+    bssid: 0a:8d:db:94:14:49
+    bytes: 14342
+    channels:
+    - 1
+    devices: {}
+    signal: -79
+    ssid: TWGGuest
+    vendor: ''
+  0a:8d:db:94:8f:33:
+    bssid: 0a:8d:db:94:8f:33
+    bytes: 8250
+    channels:
+    - 11
+    devices: {}
+    signal: -53
+    ssid: TWGGuest
+    vendor: ''
+  e6:55:3d:c1:d4:be:
+    bssid: e6:55:3d:c1:d4:be
+    bytes: 6159
+    channels:
+    - 1
+    devices: {}
+    signal: -73
+    ssid: TWGGuest
+    vendor: ''
+  e6:55:3d:c1:d9:d8:
+    bssid: e6:55:3d:c1:d9:d8
+    bytes: 6498
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: TWGGuest
+    vendor: ''
+  e6:55:3d:c1:e5:b2:
+    bssid: e6:55:3d:c1:e5:b2
+    bytes: 1810
+    channels:
+    - 1
+    devices: {}
+    signal: -75
+    ssid: TWGGuest
+    vendor: ''
+  e6:55:3d:c1:e7:5a:
+    bssid: e6:55:3d:c1:e7:5a
+    bytes: 9750
+    channels:
+    - 12
+    devices: {}
+    signal: -79
+    ssid: TWGGuest
+    vendor: ''
+  e6:55:3d:c1:e7:ae:
+    bssid: e6:55:3d:c1:e7:ae
+    bytes: 9726
+    channels:
+    - 1
+    devices: {}
+    signal: -45
+    ssid: TWGGuest
+    vendor: ''
+
+TWIDevices:
+  12:8d:db:66:5f:72:
+    bssid: 12:8d:db:66:5f:72
+    bytes: 5603
+    channels:
+    - 6
+    devices: {}
+    signal: -69
+    ssid: TWIDevices
+    vendor: ''
+  12:8d:db:66:9d:0d:
+    bssid: 12:8d:db:66:9d:0d
+    bytes: 1982
+    channels:
+    - 2
+    devices: {}
+    signal: -73
+    ssid: TWIDevices
+    vendor: ''
+  12:8d:db:94:13:c9:
+    bssid: 12:8d:db:94:13:c9
+    bytes: 4994
+    channels:
+    - 1
+    - 2
+    - 4
+    devices:
+      00:21:6a:e3:9d:6a:
+        bytes: 142
+        signal: -81
+        vendor: Intel Corporate
+      01:00:5e:00:00:fb:
+        bytes: 19094
+        signal: -51
+        vendor: ''
+      01:00:5e:00:00:fc:
+        bytes: 615
+        signal: -77
+        vendor: ''
+      24:18:1d:48:eb:b2:
+        bytes: 444
+        signal: -77
+        vendor: ''
+      30:07:4d:e0:0b:03:
+        bytes: 1640
+        signal: -77
+        vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+      '33:33:00:00:00:02':
+        bytes: 2874
+        signal: -79
+        vendor: ''
+      '33:33:00:00:00:16':
+        bytes: 2890
+        signal: -79
+        vendor: ''
+      33:33:00:00:00:fb:
+        bytes: 19934
+        signal: -51
+        vendor: ''
+      '33:33:00:01:00:03':
+        bytes: 290
+        signal: -77
+        vendor: ''
+      70:70:0d:a1:e9:cc:
+        bytes: 1159
+        signal: -81
+        vendor: Apple, Inc.
+      78:4f:43:9e:0a:c1:
+        bytes: 714
+        signal: -79
+        vendor: Apple, Inc.
+      78:88:6d:15:5e:52:
+        bytes: 446
+        signal: -77
+        vendor: ''
+      98:10:e8:35:ce:08:
+        bytes: 470
+        signal: -77
+        vendor: Apple, Inc.
+      c4:9d:ed:8c:69:26:
+        bytes: 266
+        signal: -77
+        vendor: Microsoft Corporation
+      c4:9f:4c:ef:bd:2f:
+        bytes: 142
+        signal: -79
+        vendor: ''
+      cc:20:e8:e4:81:2b:
+        bytes: 574
+        signal: -79
+        vendor: Apple, Inc.
+      cc:25:ef:15:8f:e1:
+        bytes: 575
+        signal: -77
+        vendor: Apple, Inc.
+      dc:41:5f:6a:be:e8:
+        bytes: 122
+        signal: -79
+        vendor: Apple, Inc.
+    signal: -75
+    ssid: null
+    vendor: ''
+  12:8d:db:94:14:49:
+    bssid: 12:8d:db:94:14:49
+    bytes: 987
+    channels:
+    - 1
+    devices:
+      98:9e:63:84:c2:63:
+        bytes: 597
+        signal: -71
+        vendor: Apple, Inc.
+    signal: -81
+    ssid: TWIDevices
+    vendor: ''
+  12:8d:db:94:8f:33:
+    bssid: 12:8d:db:94:8f:33
+    bytes: 46398
+    channels:
+    - 11
+    devices: {}
+    signal: -51
+    ssid: TWIDevices
+    vendor: ''
+
+TWIWIFI 2G:
+  06:8d:db:66:5f:72:
+    bssid: 06:8d:db:66:5f:72
+    bytes: 18108
+    channels:
+    - 6
+    devices: {}
+    signal: -73
+    ssid: TWIWIFI 2G
+    vendor: ''
+  06:8d:db:66:9d:0d:
+    bssid: 06:8d:db:66:9d:0d
+    bytes: 2534
+    channels:
+    - 1
+    devices: {}
+    signal: -79
+    ssid: TWIWIFI 2G
+    vendor: ''
+  06:8d:db:94:13:c9:
+    bssid: 06:8d:db:94:13:c9
+    bytes: 7874
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: TWIWIFI 2G
+    vendor: ''
+  06:8d:db:94:14:49:
+    bssid: 06:8d:db:94:14:49
+    bytes: 13706
+    channels:
+    - 1
+    devices: {}
+    signal: -77
+    ssid: TWIWIFI 2G
+    vendor: ''
+  06:8d:db:94:8f:33:
+    bssid: 06:8d:db:94:8f:33
+    bytes: 14082
+    channels:
+    - 11
+    devices: {}
+    signal: -51
+    ssid: TWIWIFI 2G
+    vendor: ''
+
+Tictrac-Guest:
+  80:2a:a8:14:7c:e0:
+    bssid: 80:2a:a8:14:7c:e0
+    bytes: 1835
+    channels:
+    - 1
+    devices: {}
+    signal: -83
+    ssid: Tictrac-Guest
+    vendor: Ubiquiti Networks Inc.
+
+Tictrac_2:
+  82:2a:a8:14:7c:e0:
+    bssid: 82:2a:a8:14:7c:e0
+    bytes: 2344
+    channels:
+    - 1
+    devices: {}
+    signal: -87
+    ssid: Tictrac_2
+    vendor: ''
+
+VC-EE-24G:
+  00:30:44:1c:81:06:
+    bssid: 00:30:44:1c:81:06
+    bytes: 9181
+    channels:
+    - 12
+    devices: {}
+    signal: -65
+    ssid: VC-EE-24G
+    vendor: CradlePoint, Inc
+
+VC-Team-UK:
+  70:73:cb:b7:1c:65:
+    bssid: 70:73:cb:b7:1c:65
+    bytes: 9358
+    channels:
+    - 1
+    - 2
+    - 3
+    - 4
+    devices:
+      00:09:0f:09:00:02:
+        bytes: 5722
+        signal: -73
+        vendor: Fortinet Inc.
+      00:11:32:12:69:a8:
+        bytes: 295
+        signal: -83
+        vendor: Synology Incorporated
+      01:00:5e:00:00:16:
+        bytes: 530
+        signal: -83
+        vendor: ''
+      01:00:5e:00:00:fb:
+        bytes: 19094
+        signal: -51
+        vendor: ''
+      01:00:5e:00:00:fc:
+        bytes: 615
+        signal: -77
+        vendor: ''
+      01:00:5e:7f:ff:fa:
+        bytes: 4150
+        signal: -77
+        vendor: ''
+      '33:33:00:00:00:16':
+        bytes: 2890
+        signal: -79
+        vendor: ''
+      33:33:00:00:00:fb:
+        bytes: 19934
+        signal: -51
+        vendor: ''
+      '33:33:00:01:00:03':
+        bytes: 290
+        signal: -77
+        vendor: ''
+      3c:07:54:09:c7:df:
+        bytes: 112
+        signal: -79
+        vendor: Apple, Inc.
+      60:57:18:6f:ad:3d:
+        bytes: 4060
+        signal: -81
+        vendor: Intel Corporate
+      6c:96:cf:89:6f:73:
+        bytes: 1026
+        signal: -81
+        vendor: ''
+      80:b0:3d:2d:64:85:
+        bytes: 163
+        signal: -77
+        vendor: ''
+      88:e9:fe:d3:be:12:
+        bytes: 592
+        signal: -81
+        vendor: ''
+      8c:85:90:09:9c:52:
+        bytes: 2794
+        signal: -85
+        vendor: ''
+      8c:85:90:56:69:bd:
+        bytes: 1722
+        signal: -81
+        vendor: ''
+      b4:18:d1:e8:d4:ab:
+        bytes: 1844
+        signal: -81
+        vendor: Apple, Inc.
+      b8:e9:37:d6:8c:9a:
+        bytes: 2682
+        signal: -73
+        vendor: Sonos, Inc.
+      c0:ee:fb:4b:fc:b4:
+        bytes: 100
+        signal: -77
+        vendor: OnePlus Tech (Shenzhen) Ltd
+      cc:20:e8:26:ea:d2:
+        bytes: 330
+        signal: -81
+        vendor: Apple, Inc.
+      f4:0f:24:32:65:48:
+        bytes: 386
+        signal: -69
+        vendor: Apple, Inc.
+      fc:e9:98:78:b1:2a:
+        bytes: 596
+        signal: -81
+        vendor: Apple, Inc.
+    signal: -71
+    ssid: VC-Team-UK
+    vendor: Apple, Inc.
+  c4:b3:01:dd:9e:f2:
+    bssid: c4:b3:01:dd:9e:f2
+    bytes: 4614
+    channels:
+    - 1
+    - 10
+    - 11
+    - 12
+    - 13
+    devices:
+      01:00:5e:00:00:16:
+        bytes: 530
+        signal: -83
+        vendor: ''
+      01:00:5e:00:00:fb:
+        bytes: 19094
+        signal: -51
+        vendor: ''
+      01:00:5e:7f:ff:fa:
+        bytes: 4150
+        signal: -77
+        vendor: ''
+      '33:33:00:00:00:02':
+        bytes: 2874
+        signal: -79
+        vendor: ''
+      '33:33:00:00:00:16':
+        bytes: 2890
+        signal: -79
+        vendor: ''
+      33:33:00:00:00:fb:
+        bytes: 19934
+        signal: -51
+        vendor: ''
+      40:9c:28:af:35:1f:
+        bytes: 606
+        signal: -83
+        vendor: ''
+      60:57:18:6f:ad:3d:
+        bytes: 4060
+        signal: -81
+        vendor: Intel Corporate
+      68:db:ca:6b:d9:cd:
+        bytes: 353
+        signal: -81
+        vendor: Apple, Inc.
+      6c:96:cf:89:6f:73:
+        bytes: 1026
+        signal: -81
+        vendor: ''
+      88:e9:fe:d3:be:12:
+        bytes: 592
+        signal: -81
+        vendor: ''
+      8c:85:90:09:9c:52:
+        bytes: 2794
+        signal: -85
+        vendor: ''
+      b4:18:d1:e8:d4:ab:
+        bytes: 1844
+        signal: -81
+        vendor: Apple, Inc.
+      b8:e9:37:d6:8c:9a:
+        bytes: 2682
+        signal: -73
+        vendor: Sonos, Inc.
+      f4:5c:89:8d:02:9f:
+        bytes: 269
+        signal: -83
+        vendor: Apple, Inc.
+      fc:e9:98:78:b1:2a:
+        bytes: 596
+        signal: -81
+        vendor: Apple, Inc.
+    signal: -81
+    ssid: VC-Team-UK
+    vendor: Apple, Inc.
+
+VM3170182:
+  c0:05:c2:3b:64:61:
+    bssid: c0:05:c2:3b:64:61
+    bytes: 301
+    channels:
+    - 11
+    devices: {}
+    signal: -91
+    ssid: VM3170182
+    vendor: ARRIS Group, Inc.
+
+VM9167825:
+  c0:05:c2:49:ba:89:
+    bssid: c0:05:c2:49:ba:89
+    bytes: 301
+    channels:
+    - 1
+    devices: {}
+    signal: -85
+    ssid: VM9167825
+    vendor: ARRIS Group, Inc.
+
+Virgin Media:
+  d2:05:c2:49:ba:89:
+    bssid: d2:05:c2:49:ba:89
+    bytes: 1687
+    channels:
+    - 1
+    devices: {}
+    signal: -87
+    ssid: Virgin Media
+    vendor: ''
+
+unknown_ssid_00:03:7f:00:00:00:
+  00:03:7f:00:00:00:
+    bssid: 00:03:7f:00:00:00
+    bytes: 4180
+    channels:
+    - 10
+    - 3
+    - 4
+    - 5
+    - 6
+    devices: {}
+    signal: -256
+    ssid: null
+    vendor: Atheros Communications, Inc.
+
+unknown_ssid_00:18:0a:6f:7e:5c:
+  00:18:0a:6f:7e:5c:
+    bssid: 00:18:0a:6f:7e:5c
+    bytes: 2184
+    channels:
+    - 11
+    devices: {}
+    signal: -83
+    ssid: ''
+    vendor: Cisco Meraki
+
+unknown_ssid_00:25:00:ff:94:73:
+  00:25:00:ff:94:73:
+    bssid: 00:25:00:ff:94:73
+    bytes: 14280
+    channels:
+    - 6
+    devices: {}
+    signal: -75
+    ssid: null
+    vendor: Apple, Inc.
+
+unknown_ssid_02:8d:cb:66:5f:72:
+  02:8d:cb:66:5f:72:
+    bssid: 02:8d:cb:66:5f:72
+    bytes: 1176
+    channels:
+    - 2
+    - 4
+    - 5
+    - 6
+    - 7
+    - 10
+    - 12
+    devices:
+      78:67:d7:52:5f:fc:
+        bytes: 2306
+        signal: -83
+        vendor: ''
+    signal: -83
+    ssid: null
+    vendor: ''
+
+unknown_ssid_08:bd:43:af:ef:92:
+  08:bd:43:af:ef:92:
+    bssid: 08:bd:43:af:ef:92
+    bytes: 264
+    channels:
+    - 11
+    - 12
+    devices:
+      f4:f5:d8:9c:15:96:
+        bytes: 386
+        signal: -85
+        vendor: Google, Inc.
+    signal: -87
+    ssid: null
+    vendor: NETGEAR
+
+unknown_ssid_0e:18:1a:6f:7e:5c:
+  0e:18:1a:6f:7e:5c:
+    bssid: 0e:18:1a:6f:7e:5c
+    bytes: 168
+    channels:
+    - 7
+    devices:
+      18:65:90:82:0e:33:
+        bytes: 308
+        signal: -87
+        vendor: Apple, Inc.
+    signal: -85
+    ssid: null
+    vendor: ''
+
+unknown_ssid_12:18:0a:6f:72:e3:
+  12:18:0a:6f:72:e3:
+    bssid: 12:18:0a:6f:72:e3
+    bytes: 336
+    channels:
+    - 8
+    - 6
+    - 7
+    devices:
+      9c:20:7b:c5:ca:5c:
+        bytes: 1248
+        signal: -75
+        vendor: Apple, Inc.
+    signal: -71
+    ssid: null
+    vendor: ''
+
+unknown_ssid_12:8d:cb:6d:ac:d3:
+  12:8d:cb:6d:ac:d3:
+    bssid: 12:8d:cb:6d:ac:d3
+    bytes: 42
+    channels:
+    - 12
+    devices:
+      dc:56:e7:8b:6e:5f:
+        bytes: 366
+        signal: -89
+        vendor: ''
+    signal: -89
+    ssid: null
+    vendor: ''
+
+unknown_ssid_24:de:c6:ce:b4:92:
+  24:de:c6:ce:b4:92:
+    bssid: 24:de:c6:ce:b4:92
+    bytes: 252
+    channels:
+    - 10
+    - 11
+    devices:
+      f0:79:60:6a:f2:23:
+        bytes: 406
+        signal: -89
+        vendor: Apple, Inc.
+    signal: -89
+    ssid: null
+    vendor: Aruba Networks
+
+unknown_ssid_24:de:c6:cf:16:93:
+  24:de:c6:cf:16:93:
+    bssid: 24:de:c6:cf:16:93
+    bytes: 7140
+    channels:
+    - 1
+    devices: {}
+    signal: -83
+    ssid: ''
+    vendor: Aruba Networks
+
+unknown_ssid_24:de:c6:cf:16:96:
+  24:de:c6:cf:16:96:
+    bssid: 24:de:c6:cf:16:96
+    bytes: 1050
+    channels:
+    - 1
+    devices: {}
+    signal: -81
+    ssid: ''
+    vendor: Aruba Networks
+
+unknown_ssid_32:8d:db:66:5f:72:
+  32:8d:db:66:5f:72:
+    bssid: 32:8d:db:66:5f:72
+    bytes: 672
+    channels:
+    - 6
+    devices: {}
+    signal: -67
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_32:8d:db:94:13:c9:
+  32:8d:db:94:13:c9:
+    bssid: 32:8d:db:94:13:c9
+    bytes: 84
+    channels:
+    - 2
+    devices: {}
+    signal: -79
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_32:8d:db:94:8f:33:
+  32:8d:db:94:8f:33:
+    bssid: 32:8d:db:94:8f:33
+    bytes: 252
+    channels:
+    - 11
+    devices: {}
+    signal: -51
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_5c:aa:fd:6c:7f:3d:
+  5c:aa:fd:6c:7f:3d:
+    bssid: 5c:aa:fd:6c:7f:3d
+    bytes: 2659
+    channels:
+    - 11
+    - 12
+    - 13
+    devices:
+      00:0e:58:51:3c:55:
+        bytes: 1556
+        signal: -256
+        vendor: Sonos, Inc.
+    signal: -256
+    ssid: null
+    vendor: Sonos, Inc.
+
+unknown_ssid_b6:15:44:a8:81:1c:
+  b6:15:44:a8:81:1c:
+    bssid: b6:15:44:a8:81:1c
+    bytes: 84
+    channels:
+    - 11
+    devices: {}
+    signal: -79
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_c0:3e:0f:cd:97:11:
+  c0:3e:0f:cd:97:11:
+    bssid: c0:3e:0f:cd:97:11
+    bytes: 210
+    channels:
+    - 12
+    devices:
+      6c:4d:73:ef:ca:bd:
+        bytes: 670
+        signal: -85
+        vendor: ''
+    signal: -85
+    ssid: null
+    vendor: BSkyB Ltd
+
+unknown_ssid_de:55:3d:c1:d4:be:
+  de:55:3d:c1:d4:be:
+    bssid: de:55:3d:c1:d4:be
+    bytes: 1260
+    channels:
+    - 1
+    devices: {}
+    signal: -69
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_de:55:3d:c1:d9:d8:
+  de:55:3d:c1:d9:d8:
+    bssid: de:55:3d:c1:d9:d8
+    bytes: 504
+    channels:
+    - 1
+    devices: {}
+    signal: -77
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_de:55:3d:c1:e5:b2:
+  de:55:3d:c1:e5:b2:
+    bssid: de:55:3d:c1:e5:b2
+    bytes: 336
+    channels:
+    - 1
+    devices: {}
+    signal: -67
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_de:55:3d:c1:e7:5a:
+  de:55:3d:c1:e7:5a:
+    bssid: de:55:3d:c1:e7:5a
+    bytes: 840
+    channels:
+    - 11
+    devices: {}
+    signal: -69
+    ssid: ''
+    vendor: ''
+
+unknown_ssid_de:55:3d:c1:e7:ae:
+  de:55:3d:c1:e7:ae:
+    bssid: de:55:3d:c1:e7:ae
+    bytes: 588
+    channels:
+    - 1
+    devices: {}
+    signal: -37
+    ssid: ''
+    vendor: ''
+
+~unassociated_devices:
+  00:18:0a:6f:72:e3:
+    bytes: 28
+    signal: -67
+    vendor: Cisco Meraki
+  00:1a:13:81:20:d0:
+    bytes: 420
+    signal: -89
+    vendor: Wanlida Group Co., LTD
+  00:25:9c:31:1b:7d:
+    bytes: 56
+    signal: -77
+    vendor: Cisco-Linksys, LLC
+  00:28:f8:26:87:e8:
+    bytes: 2136
+    signal: -81
+    vendor: Intel Corporate
+  00:28:f8:80:33:b5:
+    bytes: 10770
+    signal: -73
+    vendor: Intel Corporate
+  00:28:f8:80:58:3b:
+    bytes: 253
+    signal: -79
+    vendor: Intel Corporate
+  00:c2:c6:71:d8:fb:
+    bytes: 205
+    signal: -81
+    vendor: Intel Corporate
+  02:18:2a:6f:7e:5c:
+    bytes: 483
+    signal: -83
+    vendor: ''
+  02:6c:bc:ee:48:0a:
+    bytes: 28
+    signal: -85
+    vendor: ''
+  02:96:f0:8d:8d:c9:
+    bytes: 405
+    signal: -81
+    vendor: ''
+  06:75:00:3e:43:a4:
+    bytes: 410
+    signal: -81
+    vendor: ''
+  06:8d:db:6d:ac:d3:
+    bytes: 56
+    signal: -81
+    vendor: ''
+  06:af:3b:b4:04:a7:
+    bytes: 1208
+    signal: -47
+    vendor: ''
+  08:d4:0c:52:98:bf:
+    bytes: 205
+    signal: -79
+    vendor: Intel Corporate
+  0a:0b:01:c9:06:1d:
+    bytes: 420
+    signal: -89
+    vendor: ''
+  0a:8d:db:6d:ac:d3:
+    bytes: 28
+    signal: -81
+    vendor: ''
+  0c:8b:fd:66:10:cf:
+    bytes: 10763
+    signal: -73
+    vendor: Intel Corporate
+  0e:09:d0:61:c1:bc:
+    bytes: 352
+    signal: -83
+    vendor: ''
+  0e:8d:fb:66:5f:72:
+    bytes: 2978
+    signal: -57
+    vendor: ''
+  0e:8d:fb:66:9d:0d:
+    bytes: 11460
+    signal: -71
+    vendor: ''
+  0e:8d:fb:6d:ac:d3:
+    bytes: 1332
+    signal: -89
+    vendor: ''
+  0e:8d:fb:6d:b0:dc:
+    bytes: 1345
+    signal: -75
+    vendor: ''
+  0e:8d:fb:84:d9:4c:
+    bytes: 205
+    signal: -81
+    vendor: ''
+  0e:8d:fb:94:13:c9:
+    bytes: 7866
+    signal: -81
+    vendor: ''
+  0e:8d:fb:94:14:49:
+    bytes: 6935
+    signal: -75
+    vendor: ''
+  0e:8d:fb:94:8f:33:
+    bytes: 8733
+    signal: -69
+    vendor: ''
+  12:37:2e:34:40:28:
+    bytes: 242
+    signal: -87
+    vendor: ''
+  12:8d:db:6d:ac:d3:
+    bytes: 28
+    signal: -81
+    vendor: ''
+  12:a5:8c:73:f4:8d:
+    bytes: 205
+    signal: -77
+    vendor: ''
+  14:1f:78:47:3c:bf:
+    bytes: 242
+    signal: -83
+    vendor: Samsung Electronics Co.,Ltd
+  16:36:d3:61:e2:8c:
+    bytes: 241
+    signal: -81
+    vendor: ''
+  16:bf:13:da:73:0f:
+    bytes: 1388
+    signal: -79
+    vendor: ''
+  18:21:95:74:87:19:
+    bytes: 2429
+    signal: -81
+    vendor: Samsung Electronics Co.,Ltd
+  18:f0:e4:3d:5f:9a:
+    bytes: 204
+    signal: -83
+    vendor: ''
+  1b:8d:db:94:8f:33:
+    bytes: 62
+    signal: -41
+    vendor: ''
+  1e:28:cf:bf:51:16:
+    bytes: 2959
+    signal: -63
+    vendor: ''
+  1e:4d:37:93:b0:3c:
+    bytes: 241
+    signal: -83
+    vendor: ''
+  1e:5b:42:c7:1e:cf:
+    bytes: 140
+    signal: -85
+    vendor: ''
+  24:20:c7:72:fd:b9:
+    bytes: 28
+    signal: -85
+    vendor: Sagemcom Broadband SAS
+  24:de:c6:ce:b4:94:
+    bytes: 28
+    signal: -87
+    vendor: Aruba Networks
+  24:de:c6:cf:13:25:
+    bytes: 28
+    signal: -85
+    vendor: Aruba Networks
+  24:de:c6:cf:19:e2:
+    bytes: 28
+    signal: -87
+    vendor: Aruba Networks
+  24:de:c6:cf:1d:b2:
+    bytes: 28
+    signal: -83
+    vendor: Aruba Networks
+  24:de:c6:cf:1d:b4:
+    bytes: 28
+    signal: -85
+    vendor: Aruba Networks
+  24:de:c6:cf:1d:b5:
+    bytes: 56
+    signal: -87
+    vendor: Aruba Networks
+  24:de:c6:cf:1d:b6:
+    bytes: 28
+    signal: -89
+    vendor: Aruba Networks
+  28:92:4a:c3:7f:8b:
+    bytes: 56
+    signal: -83
+    vendor: Hewlett Packard
+  28:c6:3f:6c:44:54:
+    bytes: 2073
+    signal: -79
+    vendor: Intel Corporate
+  28:f0:76:31:55:2c:
+    bytes: 1172
+    signal: -87
+    vendor: Apple, Inc.
+  2c:54:cf:fc:f9:b7:
+    bytes: 807
+    signal: -75
+    vendor: LG Electronics (Mobile Communications)
+  2e:05:f5:b6:55:a4:
+    bytes: 347
+    signal: -77
+    vendor: ''
+  2e:06:b3:b3:42:6f:
+    bytes: 483
+    signal: -83
+    vendor: ''
+  2e:27:40:68:4f:c6:
+    bytes: 242
+    signal: -81
+    vendor: ''
+  2e:ea:0d:89:7a:7c:
+    bytes: 140
+    signal: -83
+    vendor: ''
+  30:07:4d:15:57:dd:
+    bytes: 140
+    signal: -79
+    vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+  30:07:4d:1b:5b:dd:
+    bytes: 6043
+    signal: -83
+    vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+  30:07:4d:4d:ff:d6:
+    bytes: 242
+    signal: -79
+    vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+  30:4b:07:00:44:2f:
+    bytes: 229
+    signal: -83
+    vendor: ''
+  30:96:fb:47:aa:8b:
+    bytes: 205
+    signal: -81
+    vendor: Samsung Electronics Co.,Ltd
+  30:e3:7a:ab:e6:c7:
+    bytes: 2981
+    signal: -75
+    vendor: Intel Corporate
+  32:11:2c:e6:f9:5b:
+    bytes: 1041
+    signal: -81
+    vendor: ''
+  32:8d:db:94:14:49:
+    bytes: 754
+    signal: -79
+    vendor: ''
+  32:cd:a7:9b:30:8e:
+    bytes: 84
+    signal: -81
+    vendor: ''
+  32:cd:a7:fb:92:d5:
+    bytes: 84
+    signal: -85
+    vendor: ''
+  34:08:04:2b:78:0c:
+    bytes: 28
+    signal: -79
+    vendor: D-Link Corporation
+  34:e6:ad:d0:1e:7a:
+    bytes: 241
+    signal: -83
+    vendor: Intel Corporate
+  36:65:c4:8f:15:dc:
+    bytes: 357
+    signal: -75
+    vendor: ''
+  36:9c:2f:e4:aa:bf:
+    bytes: 269
+    signal: -77
+    vendor: ''
+  36:e3:df:d7:28:b5:
+    bytes: 5269
+    signal: -77
+    vendor: ''
+  38:f2:3e:ac:c4:b0:
+    bytes: 646
+    signal: -79
+    vendor: Microsoft Mobile Oy
+  3a:48:bc:eb:26:c4:
+    bytes: 269
+    signal: -77
+    vendor: ''
+  3e:00:c0:b4:74:92:
+    bytes: 242
+    signal: -83
+    vendor: ''
+  3e:78:f9:a0:8e:56:
+    bytes: 538
+    signal: -77
+    vendor: ''
+  3e:7e:8d:a2:32:80:
+    bytes: 723
+    signal: -85
+    vendor: ''
+  40:4e:36:1a:be:9c:
+    bytes: 1372
+    signal: -87
+    vendor: HTC Corporation
+  40:4e:36:8c:24:cd:
+    bytes: 269
+    signal: -77
+    vendor: HTC Corporation
+  40:83:1d:3f:b4:2d:
+    bytes: 242
+    signal: -81
+    vendor: ''
+  40:83:de:a9:9d:41:
+    bytes: 205
+    signal: -79
+    vendor: Zebra Technologies Inc
+  40:83:de:d2:99:8e:
+    bytes: 4858
+    signal: -81
+    vendor: Zebra Technologies Inc
+  40:83:de:d2:9a:61:
+    bytes: 3732
+    signal: -83
+    vendor: Zebra Technologies Inc
+  40:83:de:e6:75:ea:
+    bytes: 5424
+    signal: -79
+    vendor: Zebra Technologies Inc
+  40:83:de:e6:7a:aa:
+    bytes: 347
+    signal: -87
+    vendor: Zebra Technologies Inc
+  40:9c:28:93:e6:d2:
+    bytes: 2232
+    signal: -77
+    vendor: ''
+  42:82:33:2c:3b:4d:
+    bytes: 269
+    signal: -81
+    vendor: ''
+  42:a2:ce:93:dd:84:
+    bytes: 724
+    signal: -79
+    vendor: ''
+  42:f2:01:50:db:25:
+    bytes: 28
+    signal: -81
+    vendor: ''
+  48:4b:aa:b3:e2:92:
+    bytes: 252
+    signal: -73
+    vendor: Apple, Inc.
+  48:51:b7:3c:c7:9c:
+    bytes: 2137
+    signal: -81
+    vendor: Intel Corporate
+  48:bf:6b:1e:27:05:
+    bytes: 306
+    signal: -83
+    vendor: Apple, Inc.
+  48:d3:43:23:bf:f1:
+    bytes: 28
+    signal: -81
+    vendor: ARRIS Group, Inc.
+  4c:ef:c0:9f:5d:81:
+    bytes: 28
+    signal: -83
+    vendor: ''
+  4e:3c:96:c7:91:f2:
+    bytes: 241
+    signal: -83
+    vendor: ''
+  4e:a0:9f:a8:db:dd:
+    bytes: 356
+    signal: -81
+    vendor: ''
+  4e:b5:01:3f:32:58:
+    bytes: 242
+    signal: -83
+    vendor: ''
+  4e:ea:90:ae:3c:b4:
+    bytes: 725
+    signal: -81
+    vendor: ''
+  52:0d:10:fe:f5:99:
+    bytes: 28
+    signal: -83
+    vendor: ''
+  54:26:96:e0:25:39:
+    bytes: 1690
+    signal: -83
+    vendor: Apple, Inc.
+  56:0b:56:d9:1e:de:
+    bytes: 280
+    signal: -85
+    vendor: ''
+  56:e9:a6:09:9f:7f:
+    bytes: 241
+    signal: -85
+    vendor: ''
+  58:6d:8f:36:ad:ff:
+    bytes: 112
+    signal: -83
+    vendor: Cisco-Linksys, LLC
+  58:6d:8f:83:2f:fd:
+    bytes: 112
+    signal: -83
+    vendor: Cisco-Linksys, LLC
+  58:c5:cb:4e:30:37:
+    bytes: 5758
+    signal: -81
+    vendor: Samsung Electronics Co.,Ltd
+  5a:a5:b8:bc:ea:f5:
+    bytes: 725
+    signal: -81
+    vendor: ''
+  5a:d3:43:cc:5e:c1:
+    bytes: 28
+    signal: -85
+    vendor: ''
+  5c:51:81:fb:29:79:
+    bytes: 201
+    signal: -87
+    vendor: ''
+  5c:a3:9d:41:6d:01:
+    bytes: 242
+    signal: -83
+    vendor: SAMSUNG ELECTRO MECHANICS CO., LTD.
+  5c:f9:38:9b:ec:16:
+    bytes: 201
+    signal: -87
+    vendor: Apple, Inc.
+  5e:d1:3c:33:8c:d3:
+    bytes: 712
+    signal: -75
+    vendor: ''
+  62:41:3b:d4:40:d2:
+    bytes: 253
+    signal: -87
+    vendor: ''
+  62:5c:71:49:40:ee:
+    bytes: 241
+    signal: -83
+    vendor: ''
+  62:e2:2d:06:c9:34:
+    bytes: 484
+    signal: -81
+    vendor: ''
+  62:f2:01:50:db:25:
+    bytes: 112
+    signal: -83
+    vendor: ''
+  64:a7:dd:38:7d:b1:
+    bytes: 28
+    signal: -79
+    vendor: Avaya Inc
+  66:9b:05:e4:72:e6:
+    bytes: 19336
+    signal: -73
+    vendor: ''
+  68:ae:20:0a:5e:ac:
+    bytes: 8188
+    signal: -51
+    vendor: Apple, Inc.
+  6c:4d:73:d7:0f:67:
+    bytes: 102
+    signal: -75
+    vendor: ''
+  6c:70:9f:da:8f:02:
+    bytes: 28
+    signal: -61
+    vendor: Apple, Inc.
+  6c:c2:17:57:76:40:
+    bytes: 56
+    signal: -75
+    vendor: Hewlett Packard
+  6e:a5:1d:7a:23:45:
+    bytes: 201
+    signal: -89
+    vendor: ''
+  6e:f8:6e:9b:33:f0:
+    bytes: 219
+    signal: -89
+    vendor: ''
+  70:70:0d:ae:f3:59:
+    bytes: 304
+    signal: -83
+    vendor: Apple, Inc.
+  72:39:cc:f3:ab:25:
+    bytes: 167
+    signal: -89
+    vendor: ''
+  72:7d:b0:ae:ba:1c:
+    bytes: 241
+    signal: -85
+    vendor: ''
+  72:bc:96:65:1d:e6:
+    bytes: 168
+    signal: -83
+    vendor: ''
+  72:c2:06:da:af:0b:
+    bytes: 144
+    signal: -83
+    vendor: ''
+  74:9e:af:4b:ca:78:
+    bytes: 429
+    signal: -87
+    vendor: ''
+  74:9e:af:4f:74:16:
+    bytes: 242
+    signal: -83
+    vendor: ''
+  76:fb:26:c5:1f:a3:
+    bytes: 484
+    signal: -83
+    vendor: ''
+  78:4f:43:53:ee:35:
+    bytes: 4641
+    signal: -41
+    vendor: Apple, Inc.
+  78:67:d7:16:bd:a4:
+    bytes: 150
+    signal: -77
+    vendor: ''
+  78:d7:5f:33:0f:59:
+    bytes: 408
+    signal: -83
+    vendor: Apple, Inc.
+  7c:11:cb:6c:4f:a0:
+    bytes: 829
+    signal: -77
+    vendor: HUAWEI TECHNOLOGIES CO.,LTD
+  7c:11:cb:98:25:dc:
+    bytes: 694
+    signal: -85
+    vendor: HUAWEI TECHNOLOGIES CO.,LTD
+  7c:c3:a1:d6:17:af:
+    bytes: 205
+    signal: -79
+    vendor: Apple, Inc.
+  7e:b2:cf:e4:06:f1:
+    bytes: 3935
+    signal: -81
+    vendor: ''
+  80:58:f8:d4:18:84:
+    bytes: 357
+    signal: -77
+    vendor: Motorola Mobility LLC, a Lenovo Company
+  80:ea:23:04:10:d2:
+    bytes: 414
+    signal: -89
+    vendor: Wistron Neweb Corporation
+  82:2a:a8:ca:00:1f:
+    bytes: 28
+    signal: -79
+    vendor: ''
+  84:89:ad:7a:b6:1d:
+    bytes: 154
+    signal: -85
+    vendor: Apple, Inc.
+  88:15:44:a8:83:b6:
+    bytes: 644
+    signal: -85
+    vendor: Cisco Meraki
+  88:53:95:28:82:85:
+    bytes: 785
+    signal: -89
+    vendor: Apple, Inc.
+  88:63:df:ae:0b:5f:
+    bytes: 362
+    signal: -67
+    vendor: Apple, Inc.
+  88:63:df:cf:d3:fd:
+    bytes: 347
+    signal: -83
+    vendor: Apple, Inc.
+  88:a6:c6:27:ca:aa:
+    bytes: 28
+    signal: -85
+    vendor: Sagemcom Broadband SAS
+  88:e9:fe:9f:20:03:
+    bytes: 612
+    signal: -81
+    vendor: ''
+  88:e9:fe:b6:84:43:
+    bytes: 364
+    signal: -81
+    vendor: ''
+  8a:15:64:a8:81:1c:
+    bytes: 1373
+    signal: -85
+    vendor: ''
+  8a:15:64:a8:83:b6:
+    bytes: 242
+    signal: -85
+    vendor: ''
+  8a:15:64:a8:85:1b:
+    bytes: 2162
+    signal: -79
+    vendor: ''
+  8a:26:7f:5f:11:52:
+    bytes: 852
+    signal: -75
+    vendor: ''
+  8a:a6:c6:03:a0:1f:
+    bytes: 316
+    signal: -83
+    vendor: ''
+  8a:c9:5d:ea:dc:f9:
+    bytes: 241
+    signal: -85
+    vendor: ''
+  8c:f5:a3:a0:60:fc:
+    bytes: 140
+    signal: -87
+    vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+  90:72:40:21:ef:5a:
+    bytes: 28
+    signal: -89
+    vendor: Apple, Inc.
+  90:97:f3:9f:74:5c:
+    bytes: 724
+    signal: -83
+    vendor: Samsung Electronics Co.,Ltd
+  92:40:78:2b:bc:6c:
+    bytes: 241
+    signal: -81
+    vendor: ''
+  94:65:9c:84:0a:f8:
+    bytes: 171
+    signal: -45
+    vendor: Intel Corporate
+  94:9f:3e:b1:60:2f:
+    bytes: 1232
+    signal: -81
+    vendor: Sonos, Inc.
+  96:c7:a9:91:ae:25:
+    bytes: 241
+    signal: -81
+    vendor: ''
+  9a:8a:7a:ea:38:5f:
+    bytes: 2162
+    signal: -69
+    vendor: ''
+  9a:99:77:e2:e1:ef:
+    bytes: 1735
+    signal: -81
+    vendor: ''
+  9c:30:5b:1f:4f:a9:
+    bytes: 4230
+    signal: -71
+    vendor: ''
+  9c:5c:f9:de:9b:13:
+    bytes: 615
+    signal: -79
+    vendor: Sony Mobile Communications AB
+  9c:b6:d0:8a:bd:83:
+    bytes: 1141
+    signal: -47
+    vendor: Rivet Networks
+  9c:b6:d0:e7:94:03:
+    bytes: 356
+    signal: -75
+    vendor: Rivet Networks
+  9c:b6:d0:ed:9c:71:
+    bytes: 807
+    signal: -77
+    vendor: Rivet Networks
+  9c:b6:d0:f9:ca:7f:
+    bytes: 253
+    signal: -83
+    vendor: Rivet Networks
+  9c:b6:d0:fd:46:29:
+    bytes: 1771
+    signal: -77
+    vendor: Rivet Networks
+  9c:d3:6d:6a:31:c8:
+    bytes: 28
+    signal: -81
+    vendor: NETGEAR
+  9c:f3:87:d6:61:56:
+    bytes: 2247
+    signal: -85
+    vendor: Apple, Inc.
+  9e:c5:96:54:8e:87:
+    bytes: 205
+    signal: -79
+    vendor: ''
+  a0:32:99:c5:f0:75:
+    bytes: 205
+    signal: -81
+    vendor: Lenovo (Beijing) Co., Ltd.
+  a0:8d:16:8b:00:80:
+    bytes: 28
+    signal: -83
+    vendor: HUAWEI TECHNOLOGIES CO.,LTD
+  a0:8d:16:8c:22:60:
+    bytes: 56
+    signal: -83
+    vendor: HUAWEI TECHNOLOGIES CO.,LTD
+  a0:d3:c1:d8:a3:c4:
+    bytes: 56
+    signal: -85
+    vendor: Hewlett Packard
+  a2:cb:bc:65:58:5b:
+    bytes: 241
+    signal: -83
+    vendor: ''
+  a4:77:33:1c:95:f7:
+    bytes: 285
+    signal: -89
+    vendor: Google, Inc.
+  a4:e9:75:bc:41:a2:
+    bytes: 56
+    signal: -77
+    vendor: ''
+  a6:8e:dc:e2:48:7a:
+    bytes: 2148
+    signal: -81
+    vendor: ''
+  a8:66:7f:34:84:d4:
+    bytes: 807
+    signal: -79
+    vendor: Apple, Inc.
+  ac:bc:32:eb:86:8b:
+    bytes: 237
+    signal: -89
+    vendor: Apple, Inc.
+  ae:4a:27:49:08:19:
+    bytes: 356
+    signal: -79
+    vendor: ''
+  ae:da:02:b9:e3:a3:
+    bytes: 1208
+    signal: -83
+    vendor: ''
+  b0:19:c6:e5:1c:29:
+    bytes: 484
+    signal: -77
+    vendor: ''
+  b0:c0:90:ca:02:61:
+    bytes: 2665
+    signal: -83
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:02:71:
+    bytes: 1011
+    signal: -81
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:02:75:
+    bytes: 3790
+    signal: -81
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:02:7b:
+    bytes: 694
+    signal: -83
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:02:bb:
+    bytes: 1072
+    signal: -79
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:2a:65:
+    bytes: 241
+    signal: -81
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:2a:6d:
+    bytes: 3980
+    signal: -79
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c0:90:ca:2a:6f:
+    bytes: 4579
+    signal: -83
+    vendor: Chicony Electronics Co., Ltd.
+  b0:c5:59:51:39:57:
+    bytes: 201
+    signal: -85
+    vendor: Samsung Electronics Co.,Ltd
+  b2:5d:67:fc:37:cc:
+    bytes: 253
+    signal: -77
+    vendor: ''
+  b2:fa:c7:a0:5b:e6:
+    bytes: 483
+    signal: -77
+    vendor: ''
+  b4:6b:fc:66:85:b4:
+    bytes: 264
+    signal: -83
+    vendor: ''
+  b4:6b:fc:76:74:9c:
+    bytes: 417
+    signal: -89
+    vendor: ''
+  b4:6b:fc:76:77:e4:
+    bytes: 5488
+    signal: -79
+    vendor: ''
+  b4:f6:1c:84:11:b4:
+    bytes: 158
+    signal: -77
+    vendor: ''
+  b6:3c:e9:a7:44:56:
+    bytes: 1012
+    signal: -75
+    vendor: ''
+  b6:c0:10:0d:d0:68:
+    bytes: 140
+    signal: -87
+    vendor: ''
+  b8:27:eb:59:70:3a:
+    bytes: 3472
+    signal: -25
+    vendor: Raspberry Pi Foundation
+  b8:27:eb:c2:93:cd:
+    bytes: 9198
+    signal: -75
+    vendor: Raspberry Pi Foundation
+  b8:c1:a2:48:a5:a4:
+    bytes: 56
+    signal: -81
+    vendor: Dragon Path Technologies Co., Limited
+  b8:e8:56:36:c3:e2:
+    bytes: 74
+    signal: -89
+    vendor: Apple, Inc.
+  b8:e9:37:d6:8c:9b:
+    bytes: 1840
+    signal: -256
+    vendor: Sonos, Inc.
+  ba:8b:15:66:fe:ce:
+    bytes: 1310
+    signal: -79
+    vendor: ''
+  ba:b3:48:c1:c6:cc:
+    bytes: 10215
+    signal: -77
+    vendor: ''
+  be:4f:78:77:9d:21:
+    bytes: 241
+    signal: -85
+    vendor: ''
+  be:9b:75:e7:25:5c:
+    bytes: 199
+    signal: -81
+    vendor: ''
+  c0:05:c2:16:45:a1:
+    bytes: 84
+    signal: -83
+    vendor: ARRIS Group, Inc.
+  c0:b6:58:8b:24:f8:
+    bytes: 56
+    signal: -89
+    vendor: ''
+  c4:72:95:93:0e:72:
+    bytes: 112
+    signal: -79
+    vendor: Cisco Systems, Inc
+  c4:9d:ed:14:f8:0c:
+    bytes: 615
+    signal: -67
+    vendor: Microsoft Corporation
+  c4:9d:ed:b6:1f:1e:
+    bytes: 538
+    signal: -79
+    vendor: Microsoft Corporation
+  c4:b3:01:c9:66:7b:
+    bytes: 2539
+    signal: -87
+    vendor: Apple, Inc.
+  c4:b3:01:dd:ff:6a:
+    bytes: 28
+    signal: -79
+    vendor: Apple, Inc.
+  c4:d9:87:ef:d6:c0:
+    bytes: 347
+    signal: -81
+    vendor: Intel Corporate
+  c6:0e:82:62:ab:8c:
+    bytes: 140
+    signal: -83
+    vendor: ''
+  c6:cb:63:8b:05:ae:
+    bytes: 242
+    signal: -85
+    vendor: ''
+  c8:a8:23:64:60:2c:
+    bytes: 28
+    signal: -87
+    vendor: Samsung Electronics Co.,Ltd
+  c8:bc:c8:c5:6c:52:
+    bytes: 4031
+    signal: -85
+    vendor: Apple, Inc.
+  ca:75:00:6a:b0:7a:
+    bytes: 140
+    signal: -85
+    vendor: ''
+  ca:87:8e:b9:9c:6f:
+    bytes: 241
+    signal: -85
+    vendor: ''
+  ca:be:2a:b5:61:71:
+    bytes: 140
+    signal: -85
+    vendor: ''
+  ca:d0:1e:2f:de:88:
+    bytes: 1625
+    signal: -89
+    vendor: ''
+  cc:2f:71:60:2f:7f:
+    bytes: 963
+    signal: -71
+    vendor: ''
+  ce:35:91:fd:39:ea:
+    bytes: 140
+    signal: -79
+    vendor: ''
+  ce:68:e5:6b:7c:60:
+    bytes: 483
+    signal: -83
+    vendor: ''
+  ce:82:83:59:0a:4f:
+    bytes: 154
+    signal: -67
+    vendor: ''
+  ce:cd:52:5c:ba:c6:
+    bytes: 3850
+    signal: -77
+    vendor: ''
+  d0:b1:28:97:28:af:
+    bytes: 482
+    signal: -81
+    vendor: ''
+  d2:05:c2:16:45:a1:
+    bytes: 56
+    signal: -81
+    vendor: ''
+  d2:05:c2:24:31:71:
+    bytes: 28
+    signal: -85
+    vendor: ''
+  d2:85:5f:51:4f:4f:
+    bytes: 1086
+    signal: -69
+    vendor: ''
+  d4:38:9c:69:7a:ac:
+    bytes: 820
+    signal: -81
+    vendor: ''
+  d4:a3:3d:36:6f:f1:
+    bytes: 253
+    signal: -83
+    vendor: ''
+  d4:a3:3d:c3:45:f0:
+    bytes: 282
+    signal: -53
+    vendor: ''
+  d6:10:94:bd:b3:30:
+    bytes: 1041
+    signal: -85
+    vendor: ''
+  d6:85:d2:57:ab:5a:
+    bytes: 269
+    signal: -79
+    vendor: ''
+  da:21:32:d7:b2:47:
+    bytes: 242
+    signal: -79
+    vendor: ''
+  da:a1:19:0d:d6:14:
+    bytes: 242
+    signal: -83
+    vendor: ''
+  da:a1:19:0d:f7:07:
+    bytes: 2057
+    signal: -79
+    vendor: ''
+  da:a1:19:1a:97:1d:
+    bytes: 205
+    signal: -81
+    vendor: ''
+  da:a1:19:1e:d3:67:
+    bytes: 241
+    signal: -73
+    vendor: ''
+  da:a1:19:45:41:f5:
+    bytes: 205
+    signal: -73
+    vendor: ''
+  da:a1:19:5d:39:cd:
+    bytes: 201
+    signal: -87
+    vendor: ''
+  da:a1:19:84:c3:7c:
+    bytes: 356
+    signal: -81
+    vendor: ''
+  da:a1:19:a7:f5:d4:
+    bytes: 107
+    signal: -87
+    vendor: ''
+  da:a1:19:bc:9b:ee:
+    bytes: 483
+    signal: -81
+    vendor: ''
+  da:a1:19:c7:d0:e6:
+    bytes: 1023
+    signal: -87
+    vendor: ''
+  da:a1:19:e3:cc:80:
+    bytes: 410
+    signal: -79
+    vendor: ''
+  da:d7:75:90:1d:c5:
+    bytes: 28
+    signal: -85
+    vendor: ''
+  da:d7:75:90:1d:c6:
+    bytes: 28
+    signal: -85
+    vendor: ''
+  da:eb:e2:06:43:26:
+    bytes: 483
+    signal: -81
+    vendor: ''
+  da:fb:dd:d9:43:74:
+    bytes: 402
+    signal: -89
+    vendor: ''
+  de:55:3d:c1:e7:e4:
+    bytes: 28
+    signal: -69
+    vendor: ''
+  de:55:3d:c1:ea:60:
+    bytes: 28
+    signal: -65
+    vendor: ''
+  de:6c:e6:b3:8d:ea:
+    bytes: 9440
+    signal: -73
+    vendor: ''
+  de:d0:83:f5:8f:a4:
+    bytes: 563
+    signal: -69
+    vendor: ''
+  e0:3e:44:04:84:4f:
+    bytes: 28
+    signal: -65
+    vendor: Broadcom
+  e0:3e:44:08:0b:03:
+    bytes: 168
+    signal: -81
+    vendor: Broadcom
+  e0:3e:44:08:84:4f:
+    bytes: 560
+    signal: -67
+    vendor: Broadcom
+  e0:3e:44:08:a7:6b:
+    bytes: 84
+    signal: -85
+    vendor: Broadcom
+  e0:94:67:ec:04:e1:
+    bytes: 712
+    signal: -47
+    vendor: Intel Corporate
+  e0:c7:67:d7:8d:ed:
+    bytes: 786
+    signal: -49
+    vendor: Apple, Inc.
+  e0:cb:1d:53:b2:8f:
+    bytes: 3225
+    signal: -79
+    vendor: Private
+  e2:55:1d:c1:d4:be:
+    bytes: 2058
+    signal: -61
+    vendor: ''
+  e2:55:1d:c1:d9:d8:
+    bytes: 513
+    signal: -71
+    vendor: ''
+  e2:55:1d:c1:db:d0:
+    bytes: 1012
+    signal: -79
+    vendor: ''
+  e2:55:1d:c1:df:80:
+    bytes: 2700
+    signal: -77
+    vendor: ''
+  e2:55:1d:c1:e5:b2:
+    bytes: 11421
+    signal: -51
+    vendor: ''
+  e2:55:1d:c1:e7:5a:
+    bytes: 8529
+    signal: -65
+    vendor: ''
+  e2:55:1d:c1:e7:ae:
+    bytes: 7935
+    signal: -81
+    vendor: ''
+  e2:55:1d:c1:e7:ba:
+    bytes: 1169
+    signal: -69
+    vendor: ''
+  e2:55:1d:c1:e7:e4:
+    bytes: 7135
+    signal: -73
+    vendor: ''
+  e2:55:1d:c1:e8:56:
+    bytes: 8863
+    signal: -69
+    vendor: ''
+  e2:a7:89:ec:b3:a7:
+    bytes: 269
+    signal: -79
+    vendor: ''
+  e2:c4:61:df:bf:48:
+    bytes: 140
+    signal: -79
+    vendor: ''
+  e2:cb:9c:88:5d:71:
+    bytes: 205
+    signal: -79
+    vendor: ''
+  e4:2b:34:13:ec:9f:
+    bytes: 145
+    signal: -89
+    vendor: ''
+  e4:70:b8:d7:29:f9:
+    bytes: 625
+    signal: -77
+    vendor: ''
+  e4:70:b8:da:37:d9:
+    bytes: 2191
+    signal: -87
+    vendor: ''
+  e4:9a:dc:82:71:4b:
+    bytes: 538
+    signal: -79
+    vendor: ''
+  e4:a4:71:f5:a8:25:
+    bytes: 362
+    signal: -69
+    vendor: Intel Corporate
+  e6:2a:e6:50:98:90:
+    bytes: 1433
+    signal: -71
+    vendor: ''
+  e6:55:3d:c1:ea:60:
+    bytes: 28
+    signal: -79
+    vendor: ''
+  e8:2a:44:f2:a6:81:
+    bytes: 845
+    signal: -83
+    vendor: ''
+  e8:50:8b:33:0b:13:
+    bytes: 205
+    signal: -81
+    vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+  ea:55:3d:c1:e7:ba:
+    bytes: 56
+    signal: -63
+    vendor: ''
+  ea:e6:ab:0c:88:5c:
+    bytes: 176
+    signal: -89
+    vendor: ''
+  ec:10:7b:d0:dd:c1:
+    bytes: 140
+    signal: -87
+    vendor: Samsung Electronics Co.,Ltd
+  ec:1f:72:b2:74:95:
+    bytes: 759
+    signal: -81
+    vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+  ee:cc:78:e5:6d:5c:
+    bytes: 820
+    signal: -79
+    vendor: ''
+  f0:18:98:0d:13:99:
+    bytes: 242
+    signal: -81
+    vendor: ''
+  f0:18:98:0f:dc:f8:
+    bytes: 357
+    signal: -85
+    vendor: ''
+  f0:98:9d:66:88:b2:
+    bytes: 282
+    signal: -81
+    vendor: ''
+  f2:8c:3f:b5:b5:ac:
+    bytes: 1491
+    signal: -77
+    vendor: ''
+  f4:5c:89:7d:77:24:
+    bytes: 360
+    signal: -85
+    vendor: Apple, Inc.
+  f4:f2:6d:69:32:4e:
+    bytes: 112
+    signal: -87
+    vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+  f6:53:df:b0:cc:60:
+    bytes: 241
+    signal: -79
+    vendor: ''
+  f6:9a:4f:cf:2a:f9:
+    bytes: 140
+    signal: -83
+    vendor: ''
+  f6:ff:1e:83:0f:b5:
+    bytes: 1388
+    signal: -81
+    vendor: ''
+  f8:35:dd:df:f7:ac:
+    bytes: 28
+    signal: -85
+    vendor: Gemtek Technology Co., Ltd.
+  fa:08:ec:9d:e8:68:
+    bytes: 205
+    signal: -79
+    vendor: ''
+  fe:55:3d:c1:e7:ba:
+    bytes: 56
+    signal: -63
+    vendor: ''
+  fe:55:3d:c1:e8:56:
+    bytes: 28
+    signal: -79
+    vendor: ''
+  fe:55:62:13:32:d1:
+    bytes: 140
+    signal: -87
+    vendor: ''
+  fe:6d:35:50:59:ce:
+    bytes: 362
+    signal: -69
+    vendor: ''
+  fe:a4:71:ee:9f:16:
+    bytes: 257
+    signal: -81
+    vendor: ''
