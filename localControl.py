@@ -7,7 +7,7 @@ run_trackerjacker = "trackerjacker -i wlan1 --map --map-file ./maps/wifi_map_31A
 
 
 # call(["ls", "-l"])
-call([run_trackerjacker])
+call([run_trackerjacker], shell=True)
 
 
 # if you want to pass some variable in the script:
