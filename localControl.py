@@ -25,7 +25,7 @@ run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
 
 
 # calls commands inside shell's location (can provide directory):
-call([activate_pyenv, run_trackerjacker], shell=True)
+call([run_trackerjacker], shell=True)
 
 
 # if you want to pass some variable in the script:
