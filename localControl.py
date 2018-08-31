@@ -1,4 +1,5 @@
 import os
+import subprocess
 from subprocess import call
 import datetime
 import time
@@ -36,7 +37,10 @@ def scan_network(seconds=10):
       # calls commands inside shell's location (can provide directory):
       call([run_trackerjacker], shell=True)
     if time.time() >= end:
-      call(["^C"])
+      print('-----------------------> interval ended')
+      subprocess.terminate
+      # call(["^C"])
+
     time.sleep(interval)
 
 scan_network()
