@@ -1,9 +1,16 @@
 import os
 from subprocess import call
 
-call(["ls", "-l"])
+run_root = "sudo su"
+activate_pyenv = "source trackerjacker_env"
+run_trackerjacker = "trackerjacker -i wlan1 --map --map-file ./maps/wifi_map_31Aug_12pm_JigsawBuilding.yaml"
 
-# if you want to pass some variable in the script this gives very easy way for example take the following part of the code
 
-# abc = a.c
-# call(["vim", abc])
+# call(["ls", "-l"])
+call([run_root, activate_pyenv, run_trackerjacker])
+
+
+# if you want to pass some variable in the script:
+
+# a = a.c
+# call(["vim", a])
