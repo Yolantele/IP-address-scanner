@@ -1,13 +1,30 @@
 import os
 from subprocess import call
+import datetime
 
-# run_root = "sudo su"
-# activate_pyenv = "source trackerjacker_env/bin/activate"
-run_trackerjacker = "trackerjacker -i wlan1 --map --map-file ./maps/wifi_map_31Aug_12pm_JigsawBuilding.yaml"
+# build map name:
+date= str(datetime.datetime.now().strftime("%d%b%y-%I%p"))
+building= '_JigsawBuilding'
+file_type = '.yaml'
+
+# configure trackerjacker:
+# - provide map:
+map_name = 'wifi_map_' + date + building + file_type
+maps_directory = ' ./maps/' 
+provide_map = ' --map-file' + maps_directory + map_name
+
+# provide interface (wlan address, lookup for device in temrinal: ifconfig -a)
+interface_name = 'wlan1'
+provide_interface = ' --interface ' + interface_name
 
 
-# call(["ls", "-l"])
-call([run_trackerjacker], shell=True)
+run_root = "sudo su"
+activate_pyenv = "source trackerjacker_env/bin/activate"
+run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
+
+
+# calls commands inside shell's location (can provide directory):
+call([run_root, activate_pyenv, run_trackerjacker], shell=True)
 
 
 # if you want to pass some variable in the script:
