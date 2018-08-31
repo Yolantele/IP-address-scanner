@@ -38,7 +38,7 @@ def scan_network(seconds=10):
       call([run_trackerjacker], shell=True)
     if time.time() >= end:
       print('-----------------------> interval ended')
-      subprocess.terminate
+      subprocess.terminate()
       # call(["^C"])
 
     time.sleep(interval)
