@@ -1,8 +1,7 @@
 import os
 import subprocess
 from subprocess import call
-import datetime
-import time
+import datetime, time
 
 #  map name:
 date = str(datetime.datetime.now().strftime("%d%b%y-%I%p"))
@@ -23,24 +22,24 @@ provide_interface = ' --interface ' + interface_name
 run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
 
 
-def scan_network(seconds=10):
 
+
+
+def scan_network(seconds=5):
   start = time.time()
-  print(start)
   end = start + seconds #seconds
-  print(end)
   interval = min(seconds /1000.0, .25)
-  print(interval)
+  
 
+  call(['whoami'], shell=True)
+  
   while True:
-    if start < end:
-      # calls commands inside shell's location (can provide directory):
-      call([run_trackerjacker], shell=True)
-    if time.time() >= end:
-      print('-----------------------> interval ended')
-      subprocess.terminate()
-      # call(["^C"])
+    if time.time() < end:
+      print('command running')
 
+    if time.time() >= end:
+      subprocess.terminate()
+      print('-----------------------> interval ended')
     time.sleep(interval)
 
 scan_network()
