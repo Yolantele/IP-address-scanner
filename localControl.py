@@ -1,34 +1,39 @@
 import os
 from subprocess import call
 import datetime
+import time
 
-# build map name:
-in_format = "%d%b%y-%I%p"
-date = str(datetime.datetime.now().strftime(in_format))
-building = '_JigsawBuilding'
-file_type = '.yaml'
+#  map name:
+date = str(datetime.datetime.now().strftime("%d%b%y-%I%p"))
+building = '_JigsawBuilding' # insert building name 
+file_type = '.yaml' 
 
-# configure trackerjacker:
-# - provide map:
+# configurations:
 map_name = 'wifi_map_' + date + building + file_type
 maps_directory = ' ./maps/' 
 provide_map = ' --map-file' + maps_directory + map_name
 
-# provide interface (wlan address, lookup for device in temrinal: ifconfig -a)
+# interface: (to find your local device wlan address, lookup for device in temrinal: ifconfig -a)
 interface_name = 'wlan1'
 provide_interface = ' --interface ' + interface_name
-
 
 # run_root = "sudo su"
 # activate_pyenv = "source trackerjacker_env/bin/activate"
 run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
 
 
-# calls commands inside shell's location (can provide directory):
-call([run_trackerjacker], shell=True)
+def scan_network(interval=10):
 
+  start = time.time()
+  print(start)
+  end = start + interval #seconds
+  print(end)
 
-# if you want to pass some variable in the script:
+  while True:
+    if time.time() < end:
+        # calls commands inside shell's location (can provide directory):
+        call([run_trackerjacker], shell=True)
+    if time.time() >= end:
+        call(["^C"])
 
-# a = a.c
-# call(["vim", a])
+scan_network()

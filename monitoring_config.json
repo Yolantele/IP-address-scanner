@@ -8,11 +8,11 @@
     "display_matching_packets": false,
     "do_map": true,
     "do_track": false,
-    "iface": null,
-    "log_level": "INFO",
+    "iface": null, // can be a specified wlan1 or other, specific to device , found out by  command in terminal ifconfig -a
+    "log_level": "INFO", // "DEBUG"
     "log_path": null,
     "map_file": "wifi_map.yaml",
-    "map_save_interval": 10,
+    "map_save_interval": 10, //seconds between the saves of map file
     "plugin_config": null,
     "power": null,
     "threshold": null,
