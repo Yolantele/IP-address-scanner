@@ -33,7 +33,7 @@ def scan_network(seconds=10):
   print(interval)
 
   while True:
-    if time.time() < end:
+    if start < end:
       # calls commands inside shell's location (can provide directory):
       call([run_trackerjacker], shell=True)
     if time.time() >= end:
