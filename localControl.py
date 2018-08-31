@@ -30,12 +30,11 @@ def scan_network(seconds=5):
   end = start + seconds #seconds
   interval = min(seconds /1000.0, .25)
   
-
-  call(['whoami'], shell=True)
+  call([run_trackerjacker], shell=True)
   
   while True:
-    if time.time() < end:
-      print('command running')
+    # if time.time() < end:
+      # print('command running')
 
     if time.time() >= end:
       subprocess.terminate()
