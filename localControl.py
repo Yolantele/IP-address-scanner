@@ -22,18 +22,21 @@ provide_interface = ' --interface ' + interface_name
 run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
 
 
-def scan_network(interval=10):
+def scan_network(seconds=10):
 
   start = time.time()
   print(start)
   end = start + interval #seconds
   print(end)
+  interval = min(seconds /1000.0, .25)
+  print(interval)
 
   while True:
     if time.time() < end:
-        # calls commands inside shell's location (can provide directory):
-        call([run_trackerjacker], shell=True)
+      # calls commands inside shell's location (can provide directory):
+      call([run_trackerjacker], shell=True)
     if time.time() >= end:
-        call(["^C"])
+      call(["^C"])
+    time.sleep(interval)
 
 scan_network()
