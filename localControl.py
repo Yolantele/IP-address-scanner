@@ -26,7 +26,7 @@ def scan_network(seconds=10):
 
   start = time.time()
   print(start)
-  end = start + interval #seconds
+  end = start + seconds #seconds
   print(end)
   interval = min(seconds /1000.0, .25)
   print(interval)
