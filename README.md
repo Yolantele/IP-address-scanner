@@ -6,7 +6,7 @@ to run network scan for devices (trackerjacker) on rPI:
 ```source trackerjacker_env/bin/activate```
 
 3. run script to launch trackerjacker scan networks for devices :
-```python3 localContral.py```
+```python3 localControl.py```
 
 4. run script to parse network .yaml map/maps into sanitized JSONs: 
 ``` node ParseTrackerJackerWifiMap.js ```
