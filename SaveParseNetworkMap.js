@@ -1,5 +1,6 @@
 const yaml = require('yamljs');
 const fs = require('fs');
+var cron = require('node-cron');
 
 
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
@@ -7,6 +8,7 @@ const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
 const PATH = laptopLocation
 
+// converts YAML to stringified JSON:
 const yamlToJson = mapName => {
   try {
     return yaml.parse(fs.readFileSync( PATH + mapName, 'utf8'));
@@ -15,14 +17,13 @@ const yamlToJson = mapName => {
   }
 }
 
-
+//parses stgringified JSON into sanitized JSON obj:
 const parseNetworkData = mapName => {
   
   let devicesAccrossNetworks = 0
   let parsedData = {}
   var jsonMap = yamlToJson(mapName)
   
-  // TODO: parse one map regularily
   Object.entries(jsonMap).forEach(([network, networkValue]) => {
     let devices = 0
     Object.entries(networkValue).forEach(([ssid, values]) => {
@@ -45,15 +46,23 @@ const parseNetworkData = mapName => {
   return parsedData
 }
 
-  const parseResult = fs.readdirSync(PATH).map(file => {
-    return parseNetworkData(String(file));
-  })
+const readForParsing = fs.readdirSync(PATH).map(file => {
+  return parseNetworkData(String(file));
+})
 
-  
-console.log(parseResult)
+
+// periodically run these commands:
+cron.schedule('* * * * *', () => { // saves every minute
+  var counter = 1
+  console.log(`-----------> JUST PARSED THE MAP FOR THE ${counter} TIME`)
+  counter += 1
+  console.log(readForParsing)
+});
+
 
 
 module.exports = {
   yamlToJson,
   parseNetworkData,
+  readForParsing,
 }
