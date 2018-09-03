@@ -5,7 +5,7 @@ const fs = require('fs');
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
 const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
-const PATH = rPiLocation
+const PATH = laptopLocation
 
 const yamlToJson = mapName => {
   try {
@@ -22,6 +22,7 @@ const parseNetworkData = mapName => {
   let parsedData = {}
   var jsonMap = yamlToJson(mapName)
   
+  // TODO: parse one map regularily
   Object.entries(jsonMap).forEach(([network, networkValue]) => {
     let devices = 0
     Object.entries(networkValue).forEach(([ssid, values]) => {
@@ -40,7 +41,7 @@ const parseNetworkData = mapName => {
   parsedData.totalNetworksDevices = devicesAccrossNetworks
   parsedData.timeStamp = fs.statSync(PATH + mapName).birthtime
   parsedData.fileName = mapName
-
+  // save data to db
   return parsedData
 }
 
