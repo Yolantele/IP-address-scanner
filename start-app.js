@@ -1,0 +1,9 @@
+const appSetup = require("./app-setup");
+const app = appSetup.app;
+
+// Start the server
+var server = app.listen(process.env.PORT || "3001", function () {
+    console.log("Network-scanner Server is up and running");
+});
+
+module.exports = server;
