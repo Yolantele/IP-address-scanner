@@ -1,5 +1,6 @@
 {
   "paths": {
+    "/api/maps": {
       "post": {
         "authRequired": false,
         "summary": "Creates row for number of devices per network",
