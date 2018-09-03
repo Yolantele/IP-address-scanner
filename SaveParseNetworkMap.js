@@ -1,12 +1,13 @@
 const yaml = require('yamljs');
 const fs = require('fs');
-var cron = require('node-cron');
-
+const cron = require('node-cron');
+const networkServices = require('./services/networkServices')
 
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
 const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
 const PATH = laptopLocation
+const BUILDING = "Morelands, Jigsaw XYZ"
 
 // converts YAML to stringified JSON:
 const yamlToJson = mapName => {
@@ -21,7 +22,7 @@ const yamlToJson = mapName => {
 const parseNetworkData = mapName => {
   
   let devicesAccrossNetworks = 0
-  let parsedData = {}
+  // let parsedData = {}
   var jsonMap = yamlToJson(mapName)
   
   Object.entries(jsonMap).forEach(([network, networkValue]) => {
@@ -34,29 +35,38 @@ const parseNetworkData = mapName => {
     if (devices === 0) {
       null
     } else {
+      // parsedData[network] = devices
+      
       devicesAccrossNetworks += devices
-      parsedData[network] = devices
+      networkServices.addNetworkDevicesToDB(network, devicesAccrossNetworks, BUILDING, 
+        (err, networkData) => {
+          if (err) {
+            console.log("Could not add network data to DB ----->", err);
+          }
+        return callback(null, networkData);
+      })
+
     }
     
   })
-  parsedData.totalNetworksDevices = devicesAccrossNetworks
-  parsedData.timeStamp = fs.statSync(PATH + mapName).birthtime
-  parsedData.fileName = mapName
-  // save data to db
-  return parsedData
+  // parsedData.totalNetworksDevices = devicesAccrossNetworks
+  // parsedData.timeStamp = fs.statSync(PATH + mapName).birthtime
+  // parsedData.fileName = mapName
+  // return parsedData
+  console.log('----------> successfully updated rows of network data')
 }
 
 const readForParsing = fs.readdirSync(PATH).map(file => {
-  return parseNetworkData(String(file));
+  parseNetworkData(String(file));
 })
 
 
-// periodically run these commands:
+// periodically runs these commands:
 cron.schedule('* * * * *', () => { // saves every minute
   var counter = 1
-  console.log(`-----------> JUST PARSED THE MAP FOR THE ${counter} TIME`)
+  readForParsing
   counter += 1
-  console.log(readForParsing)
+  console.log(`-----------> PARSED THE MAP ${counter} TIME`)
 });
 
 
