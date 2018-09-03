@@ -1,0 +1,14 @@
+{
+  "paths": {
+      "post": {
+        "authRequired": false,
+        "summary": "Creates row for number of devices per network",
+        "parameters": [
+          {"name": "ssid", "required": true, "type": "string", "description": "network name/SSID" },
+          {"name": "devices", "required": true, "type": "string", "description": "number of devices on that netork" },
+          {"name": "building", "required": true, "type": "string", "description": "building the netwrok belongs to or is close proximity" }
+        ]
+      }
+    }
+  }
+}
