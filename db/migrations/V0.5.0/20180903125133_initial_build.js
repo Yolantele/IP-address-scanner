@@ -1,8 +1,10 @@
+exports.up = (knex, Promise) =>
+  knex.schema.createTable("network_devices", table => {
+    table.increments("id").primary();
+    table.text("ssid");
+    table.text("devices");
+    table.text("building");
+    table.timestamp("timestamp");
+  })
 
-exports.up = function(knex, Promise) {
-  
-};
-
-exports.down = function(knex, Promise) {
-  
-};
+exports.down = (knex, Promise) => knex.schema.dropTable("netwrok_devices")

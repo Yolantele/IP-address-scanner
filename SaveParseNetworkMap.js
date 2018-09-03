@@ -51,7 +51,7 @@ const readForParsing = fs.readdirSync(PATH).map(file => {
 })
 
 
-// periodically run these commands:
+// periodically runs these commands:
 cron.schedule('* * * * *', () => { // saves every minute
   var counter = 1
   console.log(`-----------> JUST PARSED THE MAP FOR THE ${counter} TIME`)
