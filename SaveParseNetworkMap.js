@@ -22,7 +22,7 @@ const yamlToJson = mapName => {
 const parseNetworkData = mapName => {
   
   let devicesAccrossNetworks = 0
-  let parsedData = {}
+  // let parsedData = {}
   var jsonMap = yamlToJson(mapName)
   
   Object.entries(jsonMap).forEach(([network, networkValue]) => {
@@ -35,15 +35,17 @@ const parseNetworkData = mapName => {
     if (devices === 0) {
       null
     } else {
-      devicesAccrossNetworks += devices
       // parsedData[network] = devices
+      
+      devicesAccrossNetworks += devices
       networkServices.addNetworkDevicesToDB(network, devicesAccrossNetworks, BUILDING, 
         (err, networkData) => {
           if (err) {
-            console.error("Could not add network data to DB");
+            console.log("Could not add network data to DB ----->", err);
           }
         return callback(null, networkData);
       })
+
     }
     
   })
@@ -55,16 +57,16 @@ const parseNetworkData = mapName => {
 }
 
 const readForParsing = fs.readdirSync(PATH).map(file => {
-  return parseNetworkData(String(file));
+  parseNetworkData(String(file));
 })
 
 
 // periodically runs these commands:
 cron.schedule('* * * * *', () => { // saves every minute
   var counter = 1
-  console.log(`-----------> JUST PARSED THE MAP FOR THE ${counter} TIME`)
+  readForParsing
   counter += 1
-  console.log(readForParsing)
+  console.log(`-----------> PARSED THE MAP ${counter} TIME`)
 });
 
 
