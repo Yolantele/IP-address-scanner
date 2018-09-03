@@ -5,7 +5,7 @@ import datetime, time
 
 #  map name:
 date = str(datetime.datetime.now().strftime("%d%b%y-%I%p"))
-building = '_JigsawBuilding' # insert building name 
+building = '_Twickenham' # insert building name 
 file_type = '.yaml' 
 
 # configurations:
@@ -21,24 +21,22 @@ provide_interface = ' --interface ' + interface_name
 # activate_pyenv = "source trackerjacker_env/bin/activate"
 run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
 
+call([run_trackerjacker], shell=True)
 
 
 
-
-def scan_network(seconds=5):
-  start = time.time()
-  end = start + seconds #seconds
-  interval = min(seconds /1000.0, .25)
+# def save_network_map_test(seconds=5):
+#   start = time.time()
+#   end = start + seconds #seconds
+#   interval = min(seconds /1000.0, .25)
   
-  call([run_trackerjacker], shell=True)
   
-  while True:
-    # if time.time() < end:
-      # print('command running')
+#   while True:
+#     if time.time() < end:
+#       p = subprocess.Popen('whoami', shell=True)
 
-    if time.time() >= end:
-      subprocess.terminate()
-      print('-----------------------> interval ended')
-    time.sleep(interval)
+#     if time.time() >= end:
+#       p.kill()
+#     time.sleep(interval)
 
-scan_network()
+# save_network_map_test()
