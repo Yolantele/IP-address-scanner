@@ -4,7 +4,7 @@ exports.up = (knex, Promise) =>
     table.text("ssid");
     table.text("devices");
     table.text("building");
-    table.timestamp("timestamp");
+    table.timestamp(true, true);
   })
 
 exports.down = (knex, Promise) => knex.schema.dropTable("netwrok_devices")
