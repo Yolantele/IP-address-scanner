@@ -1,12 +1,13 @@
 const yaml = require('yamljs');
 const fs = require('fs');
-var cron = require('node-cron');
-
+const cron = require('node-cron');
+const networkServices = require('./services/networkServices')
 
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
 const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
 const PATH = laptopLocation
+const BUILDING = "Morelands, Jigsaw XYZ"
 
 // converts YAML to stringified JSON:
 const yamlToJson = mapName => {
@@ -35,15 +36,22 @@ const parseNetworkData = mapName => {
       null
     } else {
       devicesAccrossNetworks += devices
-      parsedData[network] = devices
+      // parsedData[network] = devices
+      networkServices.addNetworkDevicesToDB(network, devicesAccrossNetworks, BUILDING, 
+        (err, networkData) => {
+          if (err) {
+            console.error("Could not add network data to DB");
+          }
+        return callback(null, networkData);
+      })
     }
     
   })
-  parsedData.totalNetworksDevices = devicesAccrossNetworks
-  parsedData.timeStamp = fs.statSync(PATH + mapName).birthtime
-  parsedData.fileName = mapName
-  // save data to db
-  return parsedData
+  // parsedData.totalNetworksDevices = devicesAccrossNetworks
+  // parsedData.timeStamp = fs.statSync(PATH + mapName).birthtime
+  // parsedData.fileName = mapName
+  // return parsedData
+  console.log('----------> successfully updated rows of network data')
 }
 
 const readForParsing = fs.readdirSync(PATH).map(file => {
