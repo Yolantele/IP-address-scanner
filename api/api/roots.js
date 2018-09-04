@@ -1,9 +1,10 @@
 const networkServices = require('../../services/networkServices');
+const scannerService = require('../../SaveParseNetworkMap')
 
 module.exports = {
   maps: {
     post: async (req, params, env, callback) => {
-      const {err, data } = await networkServices.addNetworkDevicesToDB(
+      const { err, data } = await networkServices.addNetworkDevicesToDB(
         params.ssid,
         params.devices,
         params.building,
@@ -18,6 +19,11 @@ module.exports = {
       } catch (err) {
         return callback(err)
       }
+    }
+  },
+  scan: {
+    post: async (req, params, env, callback) => {
+      const { err, data } = await scannerService.launchScanner(); callback(err, data);
     }
   }
 };

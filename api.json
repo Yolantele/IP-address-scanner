@@ -10,7 +10,13 @@
           {"name": "building", "required": true, "type": "string", "description": "building the netwrok belongs to or is close proximity" }
         ]
       }
-
+    },
+    "/api/scan": {
+      "post": {
+        "authRequired": false,
+        "summary": "Launches the scanner parser/saver services",
+        "parameters": []
+      }
     },
      "/api/hello": {
       "get": {

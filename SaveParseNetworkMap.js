@@ -64,7 +64,7 @@ const readForParsing = fs.readdirSync(PATH).map(file => {
 
 
 // periodically runs these commands:
-cron.schedule('* * * * *', () => { // saves every minute
+const launchScanner = cron.schedule('* * * * *', () => { // saves every minute
   var counter = 1
   readForParsing
   counter += 1
@@ -77,4 +77,5 @@ module.exports = {
   yamlToJson,
   parseNetworkData,
   readForParsing,
+  launchScanner
 }
