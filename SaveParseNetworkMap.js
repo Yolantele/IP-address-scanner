@@ -6,7 +6,7 @@ const networkServices = require('./services/networkServices')
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
 const rPiLocation = `/home/pi/trackerjacker/maps/`;
 
-const PATH = laptopLocation
+const PATH = rPiLocation
 const BUILDING = "Morelands, Jigsaw XYZ"
 
 // converts YAML to stringified JSON:
@@ -68,7 +68,7 @@ cron.schedule('* * * * *', () => { // saves every minute
   var counter = 1
   readForParsing
   counter += 1
-  console.log(`-----------> PARSED THE MAP ${counter} TIME`)
+  console.log(`-----------> PARSED THE MAP FOR ${counter} TIMES`)
 });
 
 
