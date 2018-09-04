@@ -2,7 +2,7 @@ import os
 import subprocess
 from subprocess import call
 import datetime, time
-import request
+import requests
 
 # makes a post request to launch periodic saving of data:
 scanner_switch_url = 'https://still-temple-26174.herokuapp.com/api/scan'
