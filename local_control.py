@@ -5,13 +5,13 @@ import datetime, time
 import requests
 import yaml
 
-local = 'http://localhost:3001/api/scan'
-deployed = 'https://still-temple-26174.herokuapp.com/api/scan'
+local = 'http://localhost:3001'
+deployed = 'https://still-temple-26174.herokuapp.com'
 
 with open("wifi_map.yaml", 'r') as network_map:
     try:
         data = { "data": yaml.load(network_map) }
-        post_to_url = local 
+        post_to_url = deployed + "/api/scan"
 
         requests.post(post_to_url, json=data)
 

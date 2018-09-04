@@ -64,5 +64,4 @@ const parseNetworkData = mapName => {
 module.exports = {
   yamlToJson,
   parseNetworkData,
-  // readForParsing,
 }
