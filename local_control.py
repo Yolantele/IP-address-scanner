@@ -2,10 +2,10 @@ import os
 import subprocess
 from subprocess import call
 import datetime, time
-import requests
+import request
 
 # makes a post request to launch periodic saving of data:
-scanner_switch_url = 'https://still-temple-26174.herokuapp.com/api/scan/'
+scanner_switch_url = 'https://still-temple-26174.herokuapp.com/api/scan'
 launcher = requests.post(scanner_switch_url, data={})
 
 
