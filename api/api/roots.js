@@ -23,7 +23,9 @@ module.exports = {
   },
   scan: {
     post: async (req, params, env, callback) => {
-      const { err, data } = await scannerService.launchScanner(); callback(err, data);
+      var mapJson = req.body
+      // console.log(mapJson)
+      const { err, data } = await scannerService.parseNetworkData(req.body.data); callback(err, data);
     }
   }
 };

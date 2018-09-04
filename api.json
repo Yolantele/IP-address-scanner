@@ -14,7 +14,7 @@
     "/api/scan": {
       "post": {
         "authRequired": false,
-        "summary": "Launches the scanner parser/saver services",
+        "summary": "posts network scan maps to server",
         "parameters": []
       }
     },
