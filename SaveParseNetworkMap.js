@@ -36,7 +36,9 @@ const parseNetworkData = mapName => {
       null
     } else {
       // parsedData[network] = devices
-      
+
+    // HTTP POST TO WHATEVER YOUR HEROKU SERVER URL IS  
+
       devicesAccrossNetworks += devices
       networkServices.addNetworkDevicesToDB(network, devicesAccrossNetworks, BUILDING, 
         (err, networkData) => {

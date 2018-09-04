@@ -10,5 +10,14 @@ module.exports = {
       );
       callback(err, data);
     }
+  },
+  hello: {
+    get: (req, params, env, callback) => {
+      try {
+        return callback(null, { message: "Hello, this is network-scanner server" });
+      } catch (err) {
+        return callback(err)
+      }
+    }
   }
 };

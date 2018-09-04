@@ -31,6 +31,11 @@ https://github.com/calebmadrigal/trackerjacker
 ```--map-file MAP_FILE```  (File path to witch to output WiFi map (default is WiFi_map.yaml file) 
 
 
+- On Heroku:
+https://still-temple-26174.herokuapp.com/ | https://git.heroku.com/still-temple-26174.git
 
 
+- heroku remote:
+heroku  https://git.heroku.com/still-temple-26174.git (fetch)
+heroku  https://git.heroku.com/still-temple-26174.git (push)
 
