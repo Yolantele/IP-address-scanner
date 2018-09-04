@@ -2,6 +2,7 @@ const yaml = require('yamljs');
 const fs = require('fs');
 const cron = require('node-cron');
 const networkServices = require('./services/networkServices')
+var date = 
 
 const laptopLocation = `/Users/jolanta/Projects/2018/network-scanner/maps/`;
 const rPiLocation = `/home/pi/trackerjacker/maps/`;
@@ -65,10 +66,8 @@ const readForParsing = fs.readdirSync(PATH).map(file => {
 
 // periodically runs these commands:
 const launchScanner = cron.schedule('* * * * *', () => { // saves every minute
-  var counter = 1
   readForParsing
-  counter += 1
-  console.log(`-----------> PARSED THE MAP FOR ${counter} TIMES`)
+  console.log(`-----------> PARSED AND SAVED NETWORK MAP`, Date.now())
 });
 
 

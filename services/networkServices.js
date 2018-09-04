@@ -1,4 +1,4 @@
-//const dbServices = require("./db/sql")
+const dbServices = require("./db/sql")
 
 const NETWORK_TABLE = "network_devices";
 
