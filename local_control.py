@@ -14,14 +14,13 @@ def job():
     try:
       data = { "data": yaml.load(network_map) }
       post_to_url = deployed + "/api/scan"
-
       requests.post(post_to_url, json=data)
-
+      print('posted wifi_map.yaml to network server')
     except yaml.YAMLError as exc:
       print(exc)
 
 
-schedule.every(10).minutes.do(job)
+schedule.every(1).minutes.do(job)
 
 while 1:
   schedule.run_pending()
