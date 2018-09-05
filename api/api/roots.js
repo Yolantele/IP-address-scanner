@@ -10,6 +10,9 @@ module.exports = {
         params.building,
       );
       callback(err, data);
+    },
+    get: (req, params, env, callback) => {
+      networkServices.listAllNetworksDevices(callback)
     }
   },
   hello: {

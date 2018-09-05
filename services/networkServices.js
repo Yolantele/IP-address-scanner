@@ -15,5 +15,19 @@ module.exports = {
         return callback(null, network);
       }
     );
+  },
+
+  listAllNetworksDevices (callback) {
+    dbServices
+      .knex(NETWORK_TABLE)
+      .select('ssid', 'devices', 'building', 'created_at' )
+      .orderBy('created_at', 'desc')
+      .then(instances => {
+        return callback(null, instances);
+      })
+      .catch(err => {
+        console.error(err);
+        return callback({ error: "Could not run query" });
+      });
   }
 }
