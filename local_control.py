@@ -17,7 +17,6 @@ def job():
       data = { "data": yaml.load(network_map) }
     except yaml.YAMLError as exc:
       print(exc)
-
   post_to_url = BASE_URL + "/api/scan"
   requests.post(post_to_url, json=data)
 

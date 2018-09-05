@@ -4,7 +4,9 @@ const BUILDING = "Morelands, Jigsaw XYZ"
 
 
 const parseNetworkData = networkMap => {
-  
+  console.log("in parseNetworkData",  networkMap);
+
+
   Object.entries(networkMap).forEach(([network, networkValue]) => {
     let devicesAccrossNetworks = 0
     let devices = 0

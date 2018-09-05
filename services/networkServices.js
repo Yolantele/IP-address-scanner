@@ -29,5 +29,7 @@ module.exports = {
         console.error(err);
         return callback({ error: "Could not run query" });
       });
-  }
+  },
+
+  getNetworksDevicesByD
 }
