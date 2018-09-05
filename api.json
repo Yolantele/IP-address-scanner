@@ -9,6 +9,11 @@
           {"name": "devices", "required": true, "type": "string", "description": "number of devices on that netork" },
           {"name": "building", "required": true, "type": "string", "description": "building the netwrok belongs to or is close proximity" }
         ]
+      },
+      "get": {
+        "authRequired": false,
+        "summary": "Lists all instances of the networks with devices",
+        "parameters": []
       }
     },
     "/api/scan": {
