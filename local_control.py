@@ -1,7 +1,7 @@
 import os
 import subprocess
 from subprocess import call
-import datetime, time
+import datetime, time, threading
 import requests
 import yaml
 import schedule
@@ -11,22 +11,22 @@ deployed = 'https://still-temple-26174.herokuapp.com'
 BASE_URL = deployed 
 
 def job():
+  
   with open("wifi_map.yaml", 'r') as network_map:
     try:
       data = { "data": yaml.load(network_map) }
-      post_to_url = BASE_URL + "/api/scan"
-
-      requests.post(post_to_url, json=data)
-
-      print('posted wifi_map.yaml to network server')
-
     except yaml.YAMLError as exc:
       print(exc)
+
+  post_to_url = BASE_URL + "/api/scan"
+  requests.post(post_to_url, json=data)
+
+  print('posted wifi_map.yaml to network server')
 
 
 schedule.every(1).minutes.do(job)
 
-while 1:
+while True:
   schedule.run_pending()
   time.sleep(1)
 
