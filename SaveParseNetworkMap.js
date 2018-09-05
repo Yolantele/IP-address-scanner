@@ -28,10 +28,10 @@ const parseNetworkData = networkMap => {
         return callback(null, networkData);
       })
 
-    }
+    })
   // })
 }
 
 module.exports = {
-  parseNetworkData,
+  parseNetworkData
 }
