@@ -4,20 +4,23 @@ from subprocess import call
 import datetime, time
 import requests
 import yaml
+import schedule
 
 local = 'http://localhost:3001'
 deployed = 'https://still-temple-26174.herokuapp.com'
 
-with open("wifi_map.yaml", 'r') as network_map:
+def job():
+  with open("wifi_map.yaml", 'r') as network_map:
     try:
-        data = { "data": yaml.load(network_map) }
-        post_to_url = deployed + "/api/scan"
+      data = { "data": yaml.load(network_map) }
+      post_to_url = deployed + "/api/scan"
 
-        requests.post(post_to_url, json=data)
+      requests.post(post_to_url, json=data)
 
     except yaml.YAMLError as exc:
-        print(exc)
+      print(exc)
 
+schedule.every(1).minutes.do(job)
 
 # makes a post request to launch periodic saving of data:
 # scanner_switch_url = 'https://still-temple-26174.herokuapp.com/api/scan'
