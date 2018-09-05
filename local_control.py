@@ -8,14 +8,18 @@ import schedule
 
 local = 'http://localhost:3001'
 deployed = 'https://still-temple-26174.herokuapp.com'
+BASE_URL = deployed 
 
 def job():
   with open("wifi_map.yaml", 'r') as network_map:
     try:
       data = { "data": yaml.load(network_map) }
-      post_to_url = deployed + "/api/scan"
+      post_to_url = BASE_URL + "/api/scan"
+
       requests.post(post_to_url, json=data)
+
       print('posted wifi_map.yaml to network server')
+
     except yaml.YAMLError as exc:
       print(exc)
 
