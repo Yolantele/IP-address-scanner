@@ -3,10 +3,10 @@ const networkServices = require('./services/networkServices')
 const BUILDING = "Morelands, Jigsaw XYZ"
 
 
-const parseNetworkData = mapName => {
-  let devicesAccrossNetworks = 0
-
-  Object.entries(mapName).forEach(([network, networkValue]) => {
+const parseNetworkData = networkMap => {
+  
+  Object.entries(networkMap).forEach(([network, networkValue]) => {
+    let devicesAccrossNetworks = 0
     let devices = 0
     Object.entries(networkValue).forEach(([ssid, values]) => {
       if (typeof values['devices'] === 'object') {
@@ -17,6 +17,7 @@ const parseNetworkData = mapName => {
       null
     } else {
       devicesAccrossNetworks += devices
+
       networkServices.addNetworkDevicesToDB(network, devicesAccrossNetworks, BUILDING, 
         (err, networkData) => {
           if (err) {
@@ -24,6 +25,7 @@ const parseNetworkData = mapName => {
           }
         return callback(null, networkData);
       })
+
     }
   })
 }
