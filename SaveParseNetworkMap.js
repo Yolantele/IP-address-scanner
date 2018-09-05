@@ -28,7 +28,7 @@ const parseNetworkData = networkMap => {
         return callback(null, networkData);
       })
 
-    // }
+    }
   // })
 }
 
