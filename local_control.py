@@ -10,25 +10,45 @@ local = 'http://localhost:3001'
 deployed = 'https://still-temple-26174.herokuapp.com'
 BASE_URL = deployed 
 
-def job():
-  data ={}
+def sanitize_and_post_network_map():
+  network_map = None
+  sanitized_data = {}
   with open("wifi_map.yaml", 'r') as network_map:
     try:
-      data = { "data": yaml.load(network_map) }
+      network_map = yaml.load(network_map)
     except yaml.YAMLError as exc:
       print(exc)
+
+  for network_name, network_value in network_map.items():
+    for ssid, data in network_value.items():
+      if 'devices' in data.keys():
+        number_of_devices = len(data["devices"])
+        if number_of_devices is not 0:
+          sanitized_data[str(network_name)] = str(number_of_devices)
+
+  print(sanitized_data)
+
   post_to_url = BASE_URL + "/api/scan"
-  requests.post(post_to_url, json=data)
-
+  requests.post(post_to_url, json=sanitized_data)
   print('posted wifi_map.yaml to network server')
+  sanitized_data={}
+  
+          
+        
+
+sanitize_and_post_network_map()
 
 
-job()
-schedule.every(1).minutes.do(job)
+# job()
+# schedule.every(1).minutes.do(job)
 
-while True:
-  schedule.run_pending()
-  time.sleep(1)
+# while True:
+#   schedule.run_pending()
+#   time.sleep(1)
+
+
+
+
 
 # makes a post request to launch periodic saving of data:
 
