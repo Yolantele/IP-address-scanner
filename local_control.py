@@ -20,10 +20,14 @@ def job():
     except yaml.YAMLError as exc:
       print(exc)
 
-schedule.every(1).minutes.do(job)
+
+schedule.every(10).minutes.do(job)
+
+while 1:
+  schedule.run_pending()
+  time.sleep(1)
 
 # makes a post request to launch periodic saving of data:
-# scanner_switch_url = 'https://still-temple-26174.herokuapp.com/api/scan'
 
 # launcher = requests.post(scanner_switch_url, data={})
 
@@ -48,4 +52,3 @@ schedule.every(1).minutes.do(job)
 # run_trackerjacker = 'trackerjacker --map ' + provide_map + provide_interface
 
 # call([run_trackerjacker], shell=True)
-
