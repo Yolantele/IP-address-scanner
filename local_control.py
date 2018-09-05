@@ -11,7 +11,7 @@ deployed = 'https://still-temple-26174.herokuapp.com'
 BASE_URL = deployed 
 
 def job():
-  
+  data ={}
   with open("wifi_map.yaml", 'r') as network_map:
     try:
       data = { "data": yaml.load(network_map) }
@@ -24,6 +24,7 @@ def job():
   print('posted wifi_map.yaml to network server')
 
 
+job()
 schedule.every(1).minutes.do(job)
 
 while True:
