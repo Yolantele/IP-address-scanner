@@ -21,10 +21,11 @@ def sanitize_and_post_network_map():
 
   for network_name, network_value in network_map.items():
     for ssid, data in network_value.items():
-      if 'devices' in data.keys():
-        number_of_devices = len(data["devices"])
-        if number_of_devices is not 0:
-          sanitized_data[str(network_name)] = str(number_of_devices)
+      if type(data) is dict:   
+        if 'devices' in data.keys():
+          number_of_devices = len(data["devices"])
+          if number_of_devices is not 0:
+            sanitized_data[str(network_name)] = str(number_of_devices)
 
   print(sanitized_data)
 
