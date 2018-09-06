@@ -20,9 +20,9 @@ def sanitize_and_post_network_map():
       print(exc)
 
   for network_name, network_value in network_map.items():
-    if type(network_value) is dict:
+    if network_value is not None and type(network_value) is dict:
       for ssid, data in network_value.items():
-        if type(data) is dict:   
+        if data is not None and type(data) is dict:   
           if 'devices' in data.keys():
             number_of_devices = len(data["devices"])
             if number_of_devices is not 0:
