@@ -65,7 +65,7 @@ def this_job():
       post_network_map(sanitized_net_json)
 
 
-schedule.every(40).to(59).secods.do(this_job)
+schedule.every(40).to(59).seconds.do(this_job)
 
 while True:
   schedule.run_pending()
