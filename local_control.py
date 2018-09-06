@@ -54,8 +54,17 @@ def catch_exceptions(job_func, cancel_on_failure=False):
               return schedule.CancelJob
   return wrapper
 
+def with_logging(func):
+  @functools.wraps(func)
+  def wrapper(*args, **kwargs):
+    print('LOG: Job "%s"' % func.__name__)
+    result = func(*args, **kwargs)
+    print('LOG: Job "%s" completed' % func.__name__)
+    return result
+  return wrapper
 
 
+@with_logging
 @catch_exceptions
 def this_job():
   network_json = open_and_convert_file(MAP_FILE)
