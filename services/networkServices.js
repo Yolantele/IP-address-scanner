@@ -39,56 +39,42 @@ module.exports = {
   },
 
   async getNetworksDataByDate(
+    ssid,
     dateFrom,
-    dateTo,
-    reportType,
-  ) {
-    if (reportType && !VALID_REPORT_TYPES[reportType]) {
-      throw "Invalid report type";
-    }
+    dateTo) {
 
-
-    if (reportType) {
-      select.push(
-        dbServices.knex.raw(
-          "to_char(timestamp, '" + reportType + "') as timestamp"
-        )
-      );
-    } else {
-      select.push("timestamp");
-    }
-
-    var query = dbServices.knex(NETWORK_TABLE).select(select);
+    var query = dbServices.knex(NETWORK_TABLE).select(['ssid', 'created_at', 'devices', 'building'])
 
     query = query
       .max("devices")
       .min("devices")
       .avg("devices")
       .where({
-        building_instance_id: buildingInstanceId
+        ssid: ssid 
       });
 
+    if (ssid){
+      query = query.where("ssid", "=", ssid)
+    }
+
     if (dateFrom) {
-      query = query.where("timestamp", ">=", dateFrom);
+      query = query.where("created_at", ">=", dateFrom);
     }
 
     if (dateTo) {
-      query = query.where("timestamp", "<=", dateTo);
+      query = query.where("created_at", "<=", dateTo);
     }
 
+    query = query.groupBy("ssid");
+    query = query.groupBy("created_at");
+    query = query.groupBy("devices");
+    query = query.groupBy("building");
+    query = query.orderBy("created_at", "asc");
 
-    if (reportType) {
-      query = query.groupByRaw("to_char(timestamp, '" + reportType + "')");
-    } else {
-      query = query.groupBy("timestamp");
-    }
-
-    query = query.orderBy("primary_tag", "asc");
-    query = query.orderBy("floor", "asc");
-    query = query.orderBy("timestamp", "asc");
 
     return query
       .then(results => {
+        console.log(results)
         // Got the results - turn them into data points
         var data = {
           entries: []
@@ -96,26 +82,22 @@ module.exports = {
 
         var overallMax = null;
         var overallMin = null;
+        var overall = null;
+
+        var overallEntries = results.length
 
         results.forEach(result => {
-          if (
-            data.entries.length === 0 ||
-            data.entries[data.entries.length - 1].floor != result.floor ||
-            data.entries[data.entries.length - 1].primary_tag !=
-              result.primary_tag
+          if ( data.entries.length === 0 || data.entries[data.entries.length - 1].ssid != result.ssid
           ) {
             data.entries.push({
-              primary_tag: result.primary_tag,
-              floor: result.floor,
+              ssid: result.ssid,
               data_points: []
             });
           }
 
           data.entries[data.entries.length - 1].data_points.push({
-            timestamp: result.timestamp,
-            max: result.max,
-            min: result.min,
-            avg: result.avg
+            created_at: result.created_at,
+            devices: result.devices,
           });
 
           if (overallMin == null || result.min < overallMin) {
@@ -129,11 +111,15 @@ module.exports = {
           } else {
             overallMax += result.max;
           }
+
+          overall += result.devices
+
         });
 
         data.totals = {
           max: overallMax,
-          min: overallMin
+          min: overallMin,
+          avg: overall / overallEntries,
         };
 
         return data;
