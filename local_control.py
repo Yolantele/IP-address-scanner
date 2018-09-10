@@ -11,8 +11,10 @@ from requests.packages.urllib3.util.retry import Retry
 
 local = 'http://localhost:3001'
 deployed = 'https://still-temple-26174.herokuapp.com'
+
 BASE_URL = deployed 
 MAP_FILE = "wifi_map.yaml"
+JOB_MINUTES = 2
 
 def open_and_convert_file(yaml_file):
   with open(yaml_file, 'r') as network_map:
@@ -77,16 +79,16 @@ def with_logging(func):
 
 @with_logging
 @catch_exceptions
-def this_job():
+def post_network_map_job():
   network_json = open_and_convert_file(MAP_FILE)
   if type(network_json) is dict:
     sanitized_net_json = sanitize_network_map(network_json)
     if type(sanitized_net_json) is dict:
-      # post_network_map(sanitized_net_json)
+      post_network_map(sanitized_net_json)
       print(sanitized_net_json)
 
 
-schedule.every(0.1).minutes.do(this_job)
+schedule.every(JOB_MINUTES).minutes.do(post_network_map_job)
 
 while True:
   schedule.run_pending()
