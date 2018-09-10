@@ -29,5 +29,20 @@ module.exports = {
       var mapJson = req.body
       const { err, data } = await scannerService.parseNetworkData(mapJson); callback(err, data);
     }
+  },
+   summary: {
+    get: async (req, params, env, callback) => {
+      try {
+        console.log('----------> params are', params)
+        const res = await networkServices.getNetworksDataByDate(
+          params.ssid,
+          params.date_from,
+          params.date_to
+        );
+        return callback(null, res);
+      } catch (e) {
+        return callback(e);
+      }
+    }
   }
 };
