@@ -4,6 +4,10 @@ import requests
 import yaml
 import schedule
 import functools
+from time import sleep 
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
 
 local = 'http://localhost:3001'
 deployed = 'https://still-temple-26174.herokuapp.com'
@@ -38,8 +42,19 @@ def sanitize_network_map(json_file):
 
 def post_network_map(sanitized_json):
   post_to_url = BASE_URL + "/api/scan"
-  requests.post(post_to_url, json=sanitized_json)
-  print(sanitized_json, ' was posted to scanner-network server, ', time.time())
+
+  session = requests.Session()
+  retry = Retry(connect=3, backoff_factor=0.5)
+  adapter = HTTPAdapter(max_retries=retry)
+  session.mount('http://', adapter)
+  session.mount('https://', adapter)
+
+  session.post(post_to_url, json=sanitized_json)
+  # try:
+  #   requests.post(post_to_url, json=sanitized_json)
+  #   print(sanitized_json, ' was posted to scanner-network server, ', time.time())
+  # except requests.exceptions.ConnectionError:
+  #   r.status_code = "Connection refused"
   
 
 def catch_exceptions(job_func, cancel_on_failure=False):
@@ -74,7 +89,7 @@ def this_job():
       post_network_map(sanitized_net_json)
 
 
-schedule.every(40).to(59).seconds.do(this_job)
+schedule.every(2).minutes.do(this_job)
 
 while True:
   schedule.run_pending()
