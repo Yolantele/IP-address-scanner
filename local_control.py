@@ -12,7 +12,7 @@ from requests.packages.urllib3.util.retry import Retry
 local = 'http://localhost:3001'
 deployed = 'https://still-temple-26174.herokuapp.com'
 
-BASE_URL = deployed 
+BASE_URL = deployed
 MAP_FILE = "wifi_map.yaml"
 JOB_MINUTES = 2
 
@@ -38,7 +38,7 @@ def sanitize_network_map(json_file):
             if 'devices' in data.keys():
               number_of_devices = len(data["devices"])
               if number_of_devices is not 0:
-                sanitized_data[str(network_name)] = str(number_of_devices)
+                sanitized_data[str(network_name)] = number_of_devices
 
   return sanitized_data
 
@@ -55,6 +55,7 @@ def post_network_map(sanitized_json):
   session.post(post_to_url, json=sanitized_json)
   
 
+# decorator for persisting a job when error occurs
 def catch_exceptions(job_func, cancel_on_failure=False):
   @functools.wraps(job_func)
   def wrapper(*args, **kwargs):
@@ -67,6 +68,7 @@ def catch_exceptions(job_func, cancel_on_failure=False):
         return schedule.CancelJob
   return wrapper
 
+# decorator for basic logger of job execution
 def with_logging(func):
   @functools.wraps(func)
   def wrapper(*args, **kwargs):
