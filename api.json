@@ -6,7 +6,7 @@
         "summary": "Creates row for number of devices per network",
         "parameters": [
           {"name": "ssid", "required": true, "type": "string", "description": "network name/SSID" },
-          {"name": "devices", "required": true, "type": "string", "description": "number of devices on that netork" },
+          {"name": "devices", "required": true, "type": "integer", "description": "number of devices on that netork" },
           {"name": "building", "required": true, "type": "string", "description": "building the netwrok belongs to or is close proximity" }
         ]
       },
@@ -16,6 +16,19 @@
         "parameters": []
       }
     },
+
+    "/api/summary": {
+      "get": {
+        "authRequired": false,
+        "summary": "Gets a ssid report within provided date range",
+        "parameters": [
+          {"name": "ssid", "required": true, "type": "string", "description": "Network name"},
+          {"name": "date_from", "required": false, "type": "date", "description": "Date from" },
+          {"name": "date_to", "required": false, "type": "date", "description": "Date to" }
+        ]
+      }
+    },
+
     "/api/scan": {
       "post": {
         "authRequired": false,
@@ -23,6 +36,7 @@
         "parameters": []
       }
     },
+    
      "/api/hello": {
       "get": {
         "authRequired": false,
