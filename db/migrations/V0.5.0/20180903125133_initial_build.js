@@ -7,4 +7,4 @@ exports.up = (knex, Promise) =>
     table.timestamps(true, true);
   })
 
-exports.down = (knex, Promise) => knex.schema.dropTable("netwrok_devices")
+exports.down = (knex, Promise) => knex.schema.dropTable("network_devices")
