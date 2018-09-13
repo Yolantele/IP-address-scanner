@@ -55,7 +55,7 @@ module.exports = {
   listAllWifiData (callback) {
     dbServices
       .knex(WIFI_TABLE)
-      .select('wifi_ip', 'wifi_speed_json', 'building', 'created_at' )
+      .select('id', 'wifi_ip', 'wifi_speed_json', 'building', 'created_at' )
       .orderBy('created_at', 'desc')
       .then(instances => {
         return callback(null, instances);
