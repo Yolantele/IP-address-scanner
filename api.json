@@ -39,6 +39,11 @@
         "authRequired": false,
         "summary": "posts wifi speed scan map to server",
         "parameters": []
+      },
+      "get": {
+        "authRequired": false,
+        "summary": "Lists all wifi speed data",
+        "parameters": []
       }
     },
      "/api/hello": {

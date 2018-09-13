@@ -15,6 +15,7 @@ module.exports = {
       networkServices.listAllNetworksDevices(callback)
     }
   },
+  
   hello: {
     get: (req, params, env, callback) => {
       try {
@@ -24,19 +25,24 @@ module.exports = {
       }
     }
   },
+
   scan: {
     post: async (req, params, env, callback) => {
       var mapJson = req.body
       const { err, data } = await scannerService.parseNetworkData(mapJson); callback(err, data);
     }
   },
+
   wifi: {
     post: async (req, params, env, callback) => {
       var wifiSpeedJson = req.body
-      console.log( "----------------------> wifi Speed Json", wifiSpeedJson )
       const { err, data } = await scannerService.parseWifiSpeedData(wifiSpeedJson); callback(err, data);
+    },
+    get: (req, params, env, callback) => {
+      networkServices.listAllWifiData(callback)
     }
   },
+
   summary: {
     get: async (req, params, env, callback) => {
       try {

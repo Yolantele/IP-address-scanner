@@ -52,6 +52,20 @@ module.exports = {
       });
   },
 
+  listAllWifiData (callback) {
+    dbServices
+      .knex(WIFI_TABLE)
+      .select('wifi_ip', 'wifi_speed_json', 'building', 'created_at' )
+      .orderBy('created_at', 'desc')
+      .then(instances => {
+        return callback(null, instances);
+      })
+      .catch(err => {
+        console.error(err);
+        return callback({ error: "Could not run query" });
+      });
+  },
+
   async getNetworksDataByDate(
     ssid,
     dateFrom,
