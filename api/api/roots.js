@@ -30,7 +30,14 @@ module.exports = {
       const { err, data } = await scannerService.parseNetworkData(mapJson); callback(err, data);
     }
   },
-   summary: {
+  wifi: {
+    post: async (req, params, env, callback) => {
+      var wifiSpeedJson = req.body
+      console.log( "----------------------> wifi Speed Json", wifiSpeedJson )
+      const { err, data } = await scannerService.parseWifiSpeedData(wifiSpeedJson); callback(err, data);
+    }
+  },
+  summary: {
     get: async (req, params, env, callback) => {
       try {
         console.log('----------> params are', params)

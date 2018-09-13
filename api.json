@@ -3,7 +3,7 @@
     "/api/maps": {
       "post": {
         "authRequired": false,
-        "summary": "Creates row for number of devices per network",
+        "summary": "Creates row for network and number of devices associated to a building",
         "parameters": [
           {"name": "ssid", "required": true, "type": "string", "description": "network name/SSID" },
           {"name": "devices", "required": true, "type": "integer", "description": "number of devices on that netork" },
@@ -16,7 +16,6 @@
         "parameters": []
       }
     },
-
     "/api/summary": {
       "get": {
         "authRequired": false,
@@ -28,15 +27,20 @@
         ]
       }
     },
-
     "/api/scan": {
       "post": {
         "authRequired": false,
-        "summary": "posts network scan maps to server",
+        "summary": "posts network scan map to server",
         "parameters": []
       }
     },
-    
+    "/api/wifi": {
+      "post": {
+        "authRequired": false,
+        "summary": "posts wifi speed scan map to server",
+        "parameters": []
+      }
+    },
      "/api/hello": {
       "get": {
         "authRequired": false,

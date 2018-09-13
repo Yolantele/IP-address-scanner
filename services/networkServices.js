@@ -1,6 +1,7 @@
 const dbServices = require("./db/sql")
 
 const NETWORK_TABLE = "network_devices";
+const WIFI_TABLE = "wifi_speed_tests";
 
 const VALID_REPORT_TYPES = {
   "YYYY-MM-DD": true,
@@ -20,6 +21,19 @@ module.exports = {
           return callback({ error: "Could not add network with devices to DB" });
         }
         return callback(null, network);
+      }
+    );
+  },
+
+  addWifiSpeedToDB( wifiIP, wifiDataJson, building, timestamp, callback) {
+    dbServices.insert(
+      WIFI_TABLE,
+      {wifi_ip: wifiIP, wifi_speed_json: wifiDataJson, building: building, created_at: timestamp},
+      (err, wifi) => {
+        if (err) {
+          return callback( {error: "Could not add wifi speed data to DB"});
+        }
+        return callback(null, wifi);
       }
     );
   },
