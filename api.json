@@ -2,7 +2,7 @@
   "paths": {
     "/api/maps": {
       "post": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "Creates row for network and number of devices associated to a building",
         "parameters": [
           {"name": "ssid", "required": true, "type": "string", "description": "network name/SSID" },
@@ -11,14 +11,14 @@
         ]
       },
       "get": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "Lists all instances of the networks with devices",
         "parameters": []
       }
     },
     "/api/summary": {
       "get": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "Gets a ssid report within provided date range",
         "parameters": [
           {"name": "ssid", "required": true, "type": "string", "description": "Network name"},
@@ -29,26 +29,26 @@
     },
     "/api/scan": {
       "post": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "posts network scan map to server",
         "parameters": []
       }
     },
     "/api/wifi": {
       "post": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "posts wifi speed scan map to server",
         "parameters": []
       },
       "get": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "Lists all wifi speed data",
         "parameters": []
       }
     },
      "/api/hello": {
       "get": {
-        "authRequired": false,
+        "authRequired": true,
         "summary": "Hello from the network-scanner server"
       }
     }
