@@ -2,7 +2,7 @@
   "paths": {
     "/api/maps": {
       "post": {
-        "authRequired": true,
+        "authRequired": false,
         "summary": "Creates row for network and number of devices associated to a building",
         "parameters": [
           {"name": "ssid", "required": true, "type": "string", "description": "network name/SSID" },
@@ -11,14 +11,14 @@
         ]
       },
       "get": {
-        "authRequired": true,
+        "authRequired": false,
         "summary": "Lists all instances of the networks with devices",
         "parameters": []
       }
     },
     "/api/summary": {
       "get": {
-        "authRequired": true,
+        "authRequired": false,
         "summary": "Gets a ssid report within provided date range",
         "parameters": [
           {"name": "ssid", "required": true, "type": "string", "description": "Network name"},
@@ -29,7 +29,7 @@
     },
     "/api/scan": {
       "post": {
-        "authRequired": true,
+        "authRequired": false,
         "summary": "posts network scan map to server",
         "parameters": []
       }
@@ -48,7 +48,7 @@
     },
      "/api/hello": {
       "get": {
-        "authRequired": true,
+        "authRequired": false,
         "summary": "Hello from the network-scanner server"
       }
     }
