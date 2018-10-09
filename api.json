@@ -41,7 +41,7 @@
         "parameters": []
       },
       "get": {
-        "authRequired": true,
+        "authRequired": false,
         "summary": "Lists all wifi speed data",
         "parameters": []
       }
